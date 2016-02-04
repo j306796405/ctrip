@@ -1,0 +1,55 @@
+@charset "gb2312";
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td,em,button{margin:0;padding:0;}
+body{color:#000;font:14px/1.5 tahoma,Simsun,sans-serif;background:#fff;}
+img,fieldset{border:0;margin:0;padding:0;}
+input,textarea{font-size:12px;}
+input{vertical-align: middle;}
+table{border-collapse:collapse;}
+a{color:#0066cc;text-decoration:none;outline:none;}
+a:hover{text-decoration:underline;}
+h1,h2,h3,h4,h5,h6{font-family:Arial,Simsun,sans-serif;}
+ul,li,ol{list-style:none;}
+/* clearfix */
+.clearfix:before,.clearfix:after{content:"";display:table;}
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+/* table */
+table{width:100%; margin-bottom:2px;}
+table th, table td{padding:8px 10px;}
+table .t-l{text-align:left;}
+table .t-c{text-align:center;}
+table .t-r{text-align:right;}
+
+/* table item */
+.table-item{}
+.table-item .alert-txt{border:2px solid; background-color: #ECECEC;}
+.table-item .alert-txt .ico-alert{background:url(http://pic.c-ctrip.com/hotels121118/ico_alert_gray.png); display:inline-block; width:16px; height:16px; vertical-align: -2px;}
+/* table header */
+.table-header .col-1{width:100px;}
+.table-header h1{font-size:24px; font-family:SimHei;}
+.table-header span{font-size:36px; vertical-align:middle;}
+
+/* table data */
+.table-data, .table-data td{border:1px solid #666;}
+.table-data .tiny-radio{display:inline-block; width:18px; height:18px; vertical-align:middle; border:2px solid #000; overflow:hidden;}
+
+/* table form */
+.table-form .col-1{width:50px;}
+.table-form .col-2{width:100px;}
+.table-form em{font-style:normal; font-size:12px; color:#666;}
+.table-form p{margin-bottom:20px;}
+.table-form .color-block{display:block; width:0; height:150px; border-left:50px solid #000; overflow:hidden;}
+.table-form .radio{display:inline-block; width:42px; height:42px; vertical-align:middle; border:3px solid #000; overflow:hidden;}
+.table-form .input{display:block; width:100%; height:40px; border:3px solid #000; overflow:hidden;}
+.table-form .text{height:80px;}
+.table-form .sign{display:inline-block; height:14px; width:150px; vertical-align:middle; border-bottom:1px solid #000; overflow:hidden;}
+.table-form .star{font-size:50px;}
+
+/* page */
+.break-before{page-break-before:always}
+.break-after{page-break-after:always;}
+
+/* btn */
+.btn{display: inline-block; width: 80px; height: 23px; border: 1px solid #666; color: #333; line-height: 23px; text-align: center; border-radius: 5px;}
+.btn:hover{text-decoration: none;}

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>酒店信息</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/main.css" rel="stylesheet" />
+<link href="css/affiliate.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <div style="height:48px;">
+        <header>
+            <h1>酒店信息</h1>
+            <i id="js_return" class="returnico"></i>
+        </header>
+    </div>
+    <section class="cont_wrap">
+        <div class="">
+        	<ul class="base_list">
+                <!--<li class="arr_r">
+                    <div class="title">城市</div>
+                    <input type="text" id="zzz_h_city" placeholder="搜索酒店所在城市" readonly /><div class="btn_basis02"></div>
+                </li>-->
+		        <li class="arr_r">
+			        <div class="title">酒店类型</div>
+			        <input type="text" id="zzz_hotel_type" placeholder="请选择酒店类型" /><div class="btn_basis02"></div>
+		        </li>
+		        <li>
+			        <div class="title">酒店地址</div>
+			        <input type="text" id="zzz_h_addr" placeholder="请填写详细地址" /><div class="btn_basis02"></div>
+		        </li>
+                <li>
+                    <div class="title">酒店电话</div>
+                    <input type="text" id="zzz_h_tel" placeholder="021-123456#12345678" /><div class="btn_basis02"></div>
+                </li>
+                <!-- 出错添加class="status_warning" -->
+        		<!-- <li class="status_warning">
+        			<div class="title">酒店名称</div>
+        			<input type="text" placeholder="请填写详细酒店名称" value="张三" /><div class="btn_basis02 rotate01" style="display:block;"></div>
+        		</li> -->
+        	</ul>
+        </div>
+        <div class="wrap_info">
+            <textarea name="" id="" placeholder="请填写酒店介绍（选填）"></textarea>
+        </div>
+        <div class="pt10">
+            <ul class="base_list">
+                <li>
+                    <div class="title">联系人</div>
+                    <input type="text"  id="zzz_h_contact" placeholder="请填写联系人姓名" /><div class="btn_basis02"></div>
+                </li>
+                <!-- 出错添加class="status_warning" -->
+                <li class="status_warning">
+                    <div class="title">手机</div>
+                    <input type="text" id="zzz_h_phone" placeholder="请填写联系人手机号" value="abc" /><div class="btn_basis02" style="display:block;"></div>
+                </li>
+                <li>
+                    <div class="title">邮箱</div>
+                    <input type="text"  id="zzz_h_email" placeholder="请填写联系人邮箱" /><div class="btn_basis02"></div>
+                </li>
+            </ul>
+        </div>
+    	<div class="wrap_btn01">
+    		<div class="btn_basis01">下一步，填写房型信息</div>
+    	</div>
+    </section>
+    <div class="cui-pop-box">
+	    <div class="cui-hd">
+		    <div class=""><span class="btn_basis04"></span>直接选择加盟</div>
+	    </div>
+	    <div class="cui-bd">
+		    <div class="slogan col-black">您已申请过以下酒店，点击酒店名称可直接导入该酒店信息。</div>
+		    <ul class="hotel_list">
+			    <li><div class="hotelname">上海四季酒店</div></li>
+			    <li><div class="hotelname">上海四季酒店</div></li>
+		    </ul>
+            <div class="hotel_list_action">
+                <div class="btn_basis05">直接进行新酒店加盟</div>
+            </div>
+	    </div>
+    </div>
+
+    <div class="base_mask hotel_type_pop_box">
+        <div class="cui-bottom-fixed">
+            <ul class="city_list hotel_type_list">
+                <li>
+                    <div class="city">酒店</div>
+                </li>
+                <li class="choosed">
+                    <div class="city">农家乐</div>
+                </li>
+                <li>
+                    <div class="city">客栈民宿</div>
+                </li>
+                <li>
+                    <div class="city">其他</div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script>
+        $(function(){
+            $(function(){
+                $('#zzz_hotel_type').click(function(){
+                    $('.hotel_type_pop_box').show();
+                    $('.hotel_type_pop_box').click(function(){
+                        $('.hotel_type_pop_box').hide();
+                    })
+                })
+            })
+        })
+    </script>
+</body>
+</html>

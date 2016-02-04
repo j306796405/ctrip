@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>选择城市</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="http://webresource.c-ctrip.com/styles/h5/common/main.css" rel="stylesheet" />
+<link href="css/tuan.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <div style="height:48px;">
+        <header>
+            <h2>选择城市</h2><i id="js_return" class="returnico"></i>
+        </header>
+    </div>
+    <aside class="cont_blue">
+       <section class="search_wrap">
+	       <div class="history_close">
+			   <span class=" history_close hclose">取消</span>
+		   </div>
+	       <div class="place_search_box  clear-input-box">
+				<input type="text" class="place_search abs_size" placeholder="目的地/主题/关键字" value="">
+				<div class="s_city_num">586个城市</div>
+				<div class="s_city_loading"></div>
+				<div class="list_s_clear"></div>
+           </div>
+       </section>
+    </aside>
+    <section  class="city_box">
+        <!-- 没有结果 -->
+        <div class="sec-noresult">
+			<div class="ui-result-no">
+				<span class="ico-search"></span>
+				<span class="ui-info">没有找到符合条件的结果，请修改条件重新查询。</span>
+			</div>
+			<ul class="ui-result-tar">
+				<li>¥130</li>
+				<li class="sta-on">经济连锁</li>
+				<li>二星级以下/经济</li>
+				<li>超过一行截断显示，少于一行自适应显示宽度，对，就是这样</li>
+			</ul>
+			<div class="ui-tips">
+				<p>或者拨打携程客服电话</p>
+				<div class="btn-telephone">联系客服</div>
+			</div>
+		</div>
+        <!-- 当前 -->
+        <h2 class="city_type">当前</h2>
+	    <ul class="m_BorderRadiusWrap m_BorderRadiusWrap_city">
+		    <li class="wraploading"><div class="ui-loading-inline"><div class="ui-loading"><span class="ico-loading"></span></div>正在获取您的位置…</div></li>
+		    <li class="wraploading">定位失败，点击重试</li>
+		    <li>附近团购</li>
+		    <li>杭州</li>
+	    </ul>
+        <!-- 历史选择 -->
+        <h2 class="city_type">历史选择</h2>
+	    <ul class="m_BorderRadiusWrap m_BorderRadiusWrap_city">
+		    <li>上海上海上海</li>
+		    <li>苏州苏州苏州苏州</li>
+		    <li>三亚</li>
+	    </ul>
+        <!-- 热门城市 -->
+        <h2 class="city_type">热门城市</h2>
+        <ul class="m_BorderRadiusWrap m_BorderRadiusWrap_city">
+	        <li>上海</li>
+	        <li>苏州</li>
+	        <li>三亚</li>
+	        <li>深圳</li>
+	        <li>杭州</li>
+	        <li>无锡</li>
+        </ul>
+		<!-- 全部城市 -->
+		<div class="box-city-all">
+			<dl>
+				<dt class="ui-title arr_up">A</dt>
+				<dd>
+					<ul class="city_list">
+						<li>安吉<span>1556</span></li>
+						<li>安庆<span>1556</span></li>
+						<li class="highlight">安庆<span>1556</span></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="ui-title arr_down">P</dt>
+				<dd>
+					<ul class="city_list">
+						<li>攀枝花<span>1556</span></li>
+						<li>屏南<span>1556</span></li>
+						<li>平潭<span>1556</span></li>
+						<li>萍乡<span>1556</span></li>
+						<li>蒲城<span>1556</span></li>
+						<li>莆田<span>1556</span></li>
+					</ul>
+				</dd>
+			</dl>
+			<dl>
+				<dt class="ui-title arr_down">Q</dt>
+				<dd>
+					<ul class="city_list">
+						<li>清流<span>1556</span></li>
+						<li>青山<span>1556</span></li>
+					</ul>
+				</dd>
+			</dl>
+		</div>
+    </section>
+</body>
+</html>

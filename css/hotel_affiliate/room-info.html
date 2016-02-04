@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>房型信息详情</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/main.css" rel="stylesheet" />
+<link href="css/affiliate.css" rel="stylesheet" />
+<script src="js/zepto.min.js"></script>
+<script>
+    $(function(){
+        $('.file_item img').click(function(){
+            $('.pics_pop_box').show();
+            $('.pics_pop_box').click(function(){
+                $('.pics_pop_box').hide();
+            })
+        })
+    })
+</script>
+</head>
+<body id="ctripPage">
+    <div style="height:48px;">
+        <header>
+            <h1>房型信息详情</h1>
+            <i id="js_return" class="returnico"></i>
+            <div class="rightblue">完成</div>
+        </header>
+    </div>
+    <section class="cont_wrap">
+        <div class="pt10">
+            <ul class="base_list">
+                <li>
+                    <div class="title">房型名称</div>
+                    <input type="text" id="zzz_room_type" placeholder="请填写房型名称" />
+                </li>
+                <li>
+                    <div class="title">房价<span class="price">RMB</span></div>
+                    <input type="text" id="zzz_room_price" placeholder="请输入房价数值" />
+                </li>
+                <li>
+                    <div class="title">房价<span class="price">HKD</span></div>
+                    <input type="text" id="zzz_room_price" placeholder="请输入房价数值" />
+                </li>
+                <li>
+                    <div class="title">入住人数</div>
+                    <span class="room_num"><i class="minus num_invalid">-</i><span id="J_curNum">1</span><i class="plus">+</i></span>
+                </li>
+                <li class="no_pdr">
+                    <div class="title">早餐份数</div>
+                    <div class="aff_broadband">
+                        <div class="broadband aff_tab aff_tab_food">
+                            <span class="current">无</span>
+                            <span>1份</span>
+                            <span>2份</span>
+                            <span>3份</span>
+                            <span>4份</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="no_pdr">
+                    <div class="title">宽带</div>
+                    <div class="aff_broadband">
+                        <!-- <div class="broadband broadband_wired">
+                            <span>有线宽带</span>
+                            <i class="ico_switch active"></i>
+                        </div> -->
+                        <div class="broadband aff_tab" style="">
+                            <span class="current">未知</span>
+                            <span>有线宽带</span>
+                            <span>无线宽带</span>
+                        </div>
+                        <!-- <div class="broadband broadband_wired_no">
+                            <span>无线宽带</span>
+                            <i class="ico_switch"></i>
+                        </div> -->
+                    </div>
+                </li>
+                <li class="arr_r" id="zzz_select">
+                    <div class="title">适用星期</div>
+                    <span class="align_for_select">&nbsp;</span>
+                    <div class="day_select">
+                        <span>周一</span>
+                        <span>周二</span>
+                        <span>周三</span>
+                        <span>周四</span>
+                        <span>周五</span>
+                        <span>周六</span>
+                        <span>周日</span>
+                    </div>
+                </li>
+                <li class="arr_r" id="zzz_select2">
+                    <div class="title">适用星期</div>
+                    <span class="align_for_select">&nbsp;</span>
+                    <div class="day_select">
+                        <span>周一</span>
+                        <span>周二</span>
+                        <span>周三</span>
+                        <span>周四</span>
+                        <span>周五</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="mt10">
+            <div class="title_base01">房型图片（选填）</div>
+            <div class="room_type_upload">
+                <div class="add_file_item">
+                    <input type="file" class="inp_file"/>
+                </div>
+                <div class="upload_tips">
+                    上传不超过3张图片，单张图片<br/>
+                    不超过5M，支持jpg、png、gif。
+                </div>
+            </div>
+            <div class="room_type_upload">
+                <div class="file_item_wrap">
+                    <div class="file_item">
+                        <img class="uploaded_img" src="http://pic.c-ctrip.com/h5/hotel_affiliate/zzz_img_upload.png"
+                             alt=""/>
+                    </div>
+                </div>
+                <div class="file_item_wrap">
+                    <div class="file_item">
+                        <img class="uploaded_img" src="http://pic.c-ctrip.com/h5/hotel_affiliate/zzz_img_upload.png"
+                             alt=""/>
+                    </div>
+                </div>
+                <div class="file_item_wrap">
+                    <div class="add_file_item">
+                        <input type="file" class="inp_file"/>
+                    </div>
+                </div>
+            </div>
+            <div class="room_type_upload">
+                <div class="file_item_wrap">
+                    <div class="add_file_item add_file_item_active">
+                        <input type="file" class="inp_file"/>
+                    </div>
+                </div>
+                <div class="file_item_wrap">
+                    <div class="file_item">
+                        <i class="ico_saving"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="pop_select_day">
+        <div class="title_base01">使用星期(复选)</div>
+        <div class="pop_select_day_items">
+            <a href="javascript:;">周一</a>
+            <a href="javascript:;">周二</a>
+            <a href="javascript:;">周三</a>
+            <a href="javascript:;" class="choosed">周四</a>
+            <a href="javascript:;">周五</a>
+            <a href="javascript:;">周六</a>
+            <a href="javascript:;">周日</a>
+        </div>
+        <div class="wrap_btn01">
+            <div class="btn_basis01">确定</div>
+        </div>
+    </div>
+
+    <div class="cui-pop-box price_pop_box">
+        <div class="cui-hd">
+            <div class=""><span class="btn_basis04"></span>选择房价币种</div>
+        </div>
+        <div class="cui-bd">
+            <ul class="hotel_list">
+                <li><div class="hotelname current">房价   RMB</div></li>
+                <li><div class="hotelname">房价   RMB</div></li>
+                <li><div class="hotelname">房价   MOP</div></li>
+                <li><div class="hotelname">房价   TWD</div></li>
+                <li></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="uploading_pop_box">
+        <a class="close" href="###">×</a>
+        <div class="ico_dolphin_wrap">
+            <i class="ico_dolphin"></i>
+            <i class="ico_dolphin_diaphragm"></i>
+        </div>
+        <div class="upload_tips">1/3张上传中...</div>
+    </div>
+
+    <artical class="base_mask pics_pop_box" style="display: none;">
+        <div class="pics_inner_pop_box">
+            <div class="detail_pics_show">
+                <p class="paging">1/3</p>
+                <section class="pics_show_box">
+                    <ul class="pics_show_box_items">
+                        <li><img src="http://pic.c-ctrip.com/h5/tuan/zzz_pic20.jpg" alt=""></li>
+                        <li><img src="http://pic.c-ctrip.com/h5/tuan/zzz_pic20.jpg" alt=""></li>
+                        <li><img src="http://pic.c-ctrip.com/h5/tuan/zzz_pic20.jpg" alt=""></li>
+                        <li><img src="http://pic.c-ctrip.com/h5/tuan/zzz_pic20.jpg" alt=""></li>
+                    </ul>
+                </section>
+                <div class="ash_bin_wrap"><i class="ico_ash_bin"></i></div>
+            </div>
+        </div>
+    </artical>
+
+    <script src="js/zepto.min.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

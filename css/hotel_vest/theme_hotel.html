@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>酒店官网首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="js/jquery.js"></script>
+    <script src="js/template.js"></script>
+</head>
+<body>
+<div class="seo_wrap seo_theme_wrap_bg">
+    <h1 class="seo_main_tit">
+        <i class="ico_main_logo"></i>
+        <i class="ico_l_sign"></i>上海主题酒店<i class="ico_r_sign"></i>
+    </h1>
+    <div class="base_bd">
+        <ul class="site_nav">
+            <li class="current">上海</li> <li>北京</li> <li>丽江</li> <li>厦门</li> <li>三亚</li> <li>周庄</li> <li>杭州</li> <li>丰顺</li> <li>阳西</li> <li>哈尔滨</li> <li>烟台</li> <li>泰州</li> <li>日照</li> <li>马鞍山</li> <li>贵阳</li>
+        </ul>
+        <div class="seo_htl_list_wrap seo_theme_htl_list_wrap" style="width: 1000px;">
+            <ul class="seo_htl_list seo_theme_htl_list clearfix" id="shanghai"></ul>
+            <div class="seo_htl_list_more"><a href="###">查看更多 <i class="ico_right"></i></a></div>
+        </div>
+    </div>
+    <div class="seo_htl_list_out_wrap">
+        <div class="base_bd">
+            <div class="seo_htl_list_wrap seo_theme_htl_list_wrap">
+                <h4 class="seo_htl_list_tit">杭州</h4>
+                <ul class="seo_htl_list seo_theme_htl_list clearfix" id="hangzhou"></ul>
+                <div class="seo_htl_list_more"><a href="###">查看更多 <i class="ico_right"></i></a></div>
+            </div>
+            <div class="seo_htl_list_wrap seo_theme_htl_list_wrap">
+                <h4 class="seo_htl_list_tit">乌鲁木齐</h4>
+                <ul class="seo_htl_list seo_theme_htl_list clearfix" id="mulumuqi"></ul>
+                <div class="seo_htl_list_more"><a href="###">查看更多 <i class="ico_right"></i></a></div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="base_foot_wrap">
+    <div class="base_foot">
+        <div class="base_foot_crumb">
+            <a href="###">酒店官网</a> > 酒店大全
+        </div>
+        <div class="foot_seo_list_wrap">
+            <dl class="foot_seo_list clearfix">
+                <dt>热门酒店</dt>
+                <dd><a href="###">速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+            </dl>
+        </div>
+        <div class="foot_seo_list_wrap">
+            <dl class="foot_seo_list clearfix">
+                <dt>友情链接</dt>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">南宁零度酒店</a></dd>
+                <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">南宁零度酒店</a></dd>
+                <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">南宁零度酒店</a></dd>
+                <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+            </dl>
+        </div>
+
+    </div>
+</div>
+<div class="copyright">Copyright© 1999-2015, ctrip.com. All rights reserved.</div>
+<div class="fixed_bar"><i class="ico_fixed_bar_arrow"></i><p>回到顶部</p></div>
+<script id="list" type="text/html">
+        <%for(i = 0; i < 5; i ++){%>
+            <li>
+                <a href="###" class="seo_htl_img_wrap">
+                    <img class="seo_htl_img" src="images/zzz_img_theme_hotel_seo1.png" alt="">
+                </a>
+                <div class="htl_info <%= bgClass %>">
+                    <a href="###" class="htl_name">上海龙通花园酒店(虹桥机场
+                        航中路地铁站店）</a>
+                    <div class="grade">
+                        <span class="hotel_halfdiamond04"></span>
+                    </div>
+                    <div class="htl_position"><i class="ico_position"></i>上海闵行区吴中路2115号近外环隧道吴中路口 ，近新镇路</div>
+                    <div class="htl_info_row clearfix">
+                        <div class="htl_price"><dfn>¥</dfn><span class="htl_price_num">188</span>起</div>
+                        <a class="c_btn btn_booking" href="###">立即预定</a>
+                    </div>
+                </div>
+            </li>
+        <%}%>
+</script>
+<script>
+    var data = {
+        bgClass: 'white_bg'
+    };
+    var white_bg_list = template('list', data);
+    var no_bg_list = template('list');
+    $('#shanghai').html(white_bg_list);
+    $('#hangzhou,#mulumuqi').html(no_bg_list);
+</script>
+</body>
+</html>

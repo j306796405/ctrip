@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>房型信息详情</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/main.css" rel="stylesheet" />
+<link href="css/affiliate.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <div style="height:48px;">
+        <header>
+            <h1>房型信息详情</h1>
+            <div class="leftblue">取消</div>
+            <div class="rightblue">完成</div>
+        </header>
+    </div>
+    <section class="cont_wrap">
+        <div class="pt10">
+            <ul class="base_list">
+                <li>
+                    <div class="title">房型名称</div>
+                    <input type="text" id="zzz_room_type" placeholder="请填写房型名称" value="豪华大床房"/>
+                </li>
+                <li>
+                    <div class="title">房价<span>RMB</span></div>
+                    <input type="text" id="zzz_room_price" placeholder="请输入房价数值" />
+                </li>
+                <li>
+                    <div class="title">房价<span>HKD</span></div>
+                    <input type="text" id="zzz_room_price" placeholder="请输入房价数值" />
+                </li>
+                <li>
+                    <div class="title">入住人数</div>
+                    <span class="room_num"><i class="minus num_invalid">-</i><span id="J_curNum">1</span><i class="plus">+</i></span>
+                </li>
+                <li class="no_pdr">
+                    <div class="title">早餐份数</div>
+                    <div class="aff_broadband">
+                        <div class="broadband aff_tab aff_tab_food">
+                            <span class="current">无</span>
+                            <span>1份</span>
+                            <span>2份</span>
+                            <span>3份</span>
+                            <span>4份</span>
+                        </div>
+                    </div>
+                </li>
+                <li class="no_pdr">
+                    <div class="title">宽带</div>
+                    <div class="aff_broadband">
+                        <!-- <div class="broadband broadband_wired">
+                            <span>有线宽带</span>
+                            <i class="ico_switch active"></i>
+                        </div> -->
+                        <div class="broadband aff_tab" style="">
+                            <span class="current">未知</span>
+                            <span>有线宽带</span>
+                            <span>无线宽带</span>
+                        </div>
+                        <!-- <div class="broadband broadband_wired_no">
+                            <span>无线宽带</span>
+                            <i class="ico_switch"></i>
+                        </div> -->
+                    </div>
+                </li>
+                <li class="arr_r" id="zzz_select">
+                    <div class="title">适用星期</div>
+                    <span class="align_for_select">&nbsp;</span>
+                    <div class="day_select">
+                        <span>周一</span>
+                        <span>周二</span>
+                        <span>周三</span>
+                        <span>周四</span>
+                        <span>周五</span>
+                        <span>周六</span>
+                        <span>周日</span>
+                    </div>
+                </li>
+                <li class="arr_r" id="zzz_select2">
+                    <div class="title">适用星期</div>
+                    <span class="align_for_select">&nbsp;</span>
+                    <div class="day_select">
+                        <span>周一</span>
+                        <span>周二</span>
+                        <span>周三</span>
+                        <span>周四</span>
+                        <span>周五</span>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="pop_select_day">
+        <div class="title_base01">使用星期(复选)</div>
+        <div class="pop_select_day_items">
+            <a href="javascript:;">周一</a>
+            <a href="javascript:;">周二</a>
+            <a href="javascript:;">周三</a>
+            <a href="javascript:;" class="choosed">周四</a>
+            <a href="javascript:;">周五</a>
+            <a href="javascript:;">周六</a>
+            <a href="javascript:;">周日</a>
+        </div>
+        <div class="wrap_btn01">
+            <div class="btn_basis01">确定</div>
+        </div>
+    </div>
+    <!--提示与出错: 警告型报错-->
+    <div class="cui-pop-box">
+         <div class="cui-bd"> 
+             <p class="cui-error-tips">确定删除？</p>
+             <div class="cui-roller-btns">
+                  <div class="cui-flexbd cui-btns-cancel">取消</div>
+                  <div class="cui-flexbd cui-btns-sure">确定</div>
+             </div>
+         </div>
+    </div>
+    <div class="cui-toast">
+        <div class="cui-layer-padding">
+            <div class="cui-layer-content">删除成功</div>
+        </div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/ui.js"></script>
+</body>
+</html>

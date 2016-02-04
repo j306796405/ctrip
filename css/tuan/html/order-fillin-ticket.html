@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>门票订单填写</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="http://webresource.c-ctrip.com/styles/h5/common/main.css" rel="stylesheet" />
+<link href="css/tuan.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <div style="height:48px;">
+        <header>
+            <b class="icon_home i_bef" id="js_home"></b>
+            <h2>订单填写</h2><i id="js_return" class="returnico"></i>
+        </header>
+    </div>
+    <article  class="cont_wrap">
+        <ul class="box_list box_list_ticketA">
+	        <li class="title titleT2">上海欢乐谷门票 (成人票-电子票)</li>
+	        <li class="arr_r">
+		        <span class="label">使用日期</span>
+		        <span class="iptbox"><input type="text" readonly placeholder="请选择游玩日期" value="10月10日 中秋"></span>
+	        </li>
+	        <li>
+		        <span class="label">购买数量</span>
+		        <div class="btn_fine_tuning">
+			        <!--可用状态.minus、.plus，不可用状态.minus.num_invalid、.plus.num_invalid -->
+			        <i class="minus num_invalid"></i><span class="numtext">3</span><i class="plus"></i>
+		        </div>
+	        </li>
+        </ul>
+	    <ul class="box_list box_list_ticketB">
+		    <li class="">
+			    <span class="label">取票人</span>
+			    <span class="iptbox"><input type="text" placeholder="需与证件上的名字一致"><i class="icon icon_del"></i></span>
+		    </li>
+		    <li class="errorli">
+			    <span class="label">手机号码</span>
+			    <span class="iptbox"><input type="text" placeholder="用于接收取票凭证短信"><i class="icon icon_del"></i></span>
+			    <i class="icon icon_user"></i>
+		    </li>
+	    </ul>
+        <ul class="btm_price">
+            <li class="item03">
+                <span class="text_transparent text_size12">订单总额：</span>¥ 2000
+            </li>
+            <!-- 已过期、已抢完 class="btm_tuan_btn_dis" -->
+            <li class="btm_tuan_btn">提交</li>
+        </ul>
+    </article>
+    <section class="tips_position">
+	    <div class="tips_position_hd">您的订单尚未完成，确定要离开吗？</div>
+	    <ul class="tips_position_btn dflex">
+		    <li>取消</li>
+		    <li>离开</li>
+	    </ul>
+    </section>
+    <div class="cui-toast">
+	    <div class="cui-layer-padding">
+		    <div class="cui-layer-content">请选择游玩日期</div>
+	    </div>
+    </div>
+    <div class="cui-toast">
+	    <div class="cui-layer-padding">
+		    <div class="cui-layer-content">请输入取票人姓名</div>
+	    </div>
+    </div>
+    <div class="cui-toast">
+	    <div class="cui-layer-padding">
+		    <div class="cui-layer-content">请输入正确的取票人姓名</div>
+	    </div>
+    </div>
+    <div class="cui-toast">
+	    <div class="cui-layer-padding">
+		    <div class="cui-layer-content">请输入手机号码</div>
+	    </div>
+    </div>
+    <div class="cui-toast">
+	    <div class="cui-layer-padding">
+		    <div class="cui-layer-content">请输入正确的手机号码</div>
+	    </div>
+    </div>
+    <div class="cui-toast">
+	    <div class="cui-layer-padding">
+		    <div class="cui-layer-content">网络连接超时，请稍后重试</div>
+	    </div>
+    </div>
+</body>
+</html>

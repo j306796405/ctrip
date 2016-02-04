@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>酒店官网首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/common.css"/>
+    <script src="js/template.js"></script>
+</head>
+<body>
+<div class="seo_wrap seo_wrap_bg">
+    <h1 class="seo_main_tit">
+        <i class="ico_main_logo"></i>
+        <i class="ico_l_sign"></i>上海亲子酒店<i class="ico_r_sign"></i>
+    </h1>
+    <div class="base_bd">
+        <ul class="seo_htl_list clearfix" id="seo_htl_list">
+        </ul>
+        <div class="page_box">
+            <div class="c_page"> <a href="###" class="c_up">上一页</a>
+                <div class="c_page_list layoutfix"> <a href="###">1</a> <span class="c_page_ellipsis">...</span> <a href="###">6</a> <a href="###">9</a> <a href="###" class="current">10</a> <a href="###">11</a> <a href="###">12</a> <span class="c_page_ellipsis">...</span> <a href="###">999</a> </div>
+                <a href="###" class="c_down">下一页</a> <a href="###" class="c_up_nocurrent">上一页</a> <a href="###" class="c_down_nocurrent">下一页</a>
+                <div class="c_pagevalue">到
+                    <input type="text" class="c_page_num" name="">
+                    页
+                    <input type="button" class="c_page_submit" value="确定" name="">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="base_foot_wrap">
+    <div class="base_foot">
+        <div class="base_foot_crumb">
+            <a href="###">酒店官网</a> > 酒店大全
+        </div>
+        <div class="foot_seo_list_wrap">
+            <dl class="foot_seo_list clearfix">
+                <dt>热门酒店</dt>
+                <dd><a href="###">速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+            </dl>
+        </div>
+        <div class="foot_seo_list_wrap">
+            <dl class="foot_seo_list clearfix">
+                <dt>友情链接</dt>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">南宁零度酒店</a></dd>
+                <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">南宁零度酒店</a></dd>
+                <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                <dd><a href="###">南宁零度酒店</a></dd>
+                <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+            </dl>
+        </div>
+
+    </div>
+</div>
+<div class="copyright">Copyright© 1999-2015, ctrip.com. All rights reserved.</div>
+<div id="content"></div>
+<script id="list" type="text/html">
+        <%for(i = 0; i < 9; i ++){%>
+            <li>
+                <a href="###" class="seo_htl_img_wrap">
+                    <img class="seo_htl_img" src="images/img_seo_list_1.png" alt="">
+                </a>
+                <div class="htl_info">
+                    <a href="###" class="htl_name">曼哈顿大酒店</a>
+                    <span class="htl_stars htl_stars_4"></span>
+                    <div class="htl_position"><i class="ico_position"></i>上海闵行区吴中路2115号近外环隧道吴中路口 ，近新镇路</div>
+                    <div class="htl_info_row">
+                        <div class="htl_price"><dfn>¥</dfn><span class="htl_price_num">188</span>起</div>
+                        <a class="c_btn btn_booking" href="###">立即预定</a>
+                    </div>
+                </div>
+            </li>
+        <%}%>
+</script>
+<script>
+    var data = {
+
+    };
+    var html = template('list', data);
+    document.getElementById('seo_htl_list').innerHTML = html;
+</script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>地图</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="http://webresource.c-ctrip.com/styles/h5/common/main.css" rel="stylesheet" />
+<link href="css/tuan.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <!--<div style="height:48px;">
+        <header>
+            <b class="icon_home i_bef" id="js_home"></b>
+            <h1>地图</h1><i id="js_return" class="returnico"></i>
+        </header>
+    </div>-->
+    <section  class="cont_wrap">
+    	<!-- <div class="cur_pos"><a href="###">酒店团购</a> &gt; <a href="###">{上海}{门票}团购</a> &gt; <h1>{上海南泉大酒店（标准大床房/标准双床房）}酒店地图</h1></div> -->
+    	<div class="ico_map" style="top:60px;"><p>上海虹桥迎宾馆上海虹桥迎宾馆上海虹桥迎宾馆上海虹桥迎宾馆上海虹桥迎宾馆上海虹桥迎宾馆上海虹桥迎宾馆</p></div>
+		<div class="ico_map" style="top:200px; left:105px;">
+			<p class="ui-title">酒店名称短名称呀短名称</p>
+			<p class="ui-price"><dfn>&yen;</dfn>999</p>
+		</div>
+
+        <div class="ico_map2" style="bottom:140px;">
+            <p>上海市中心</p>
+        </div>
+        <br>
+        <div class="ico_map2" style="bottom:70px;">
+            <p>如家快捷酒店南站分店</p>
+            <p><dfn>&yen;</dfn>999</p>
+        </div>
+    	<br>
+        <ul class="map_type">
+            <li class="all current">全部分类</li>
+            <li class="hotel current">酒店</li>
+            <li class="dining">美食</li>
+            <li class="ticket">门票</li>
+            <li class="recreation">娱乐</li>
+	        <li class="vacation">旅游出行</li>
+        </ul>
+    	<br>
+        <!-- 相对于屏幕left:13px，bottom:16px -->
+        <div class="map_curpos_btn"></div>
+        <!--<div class="map_curpos_rebtn"></div>-->
+    	<br>
+        <div class="map_curpos"></div>
+        <br>
+        <br>
+        <div class="landmarks_hotel"></div>
+        <div class="landmarks_dining"></div>
+        <div class="landmarks_ticket"></div>
+        <div class="landmarks_recreation"></div>
+	    <div class="landmarks_vacation"></div>
+	    <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    	<div class="ico_map_return"></div>
+    	<div class="ico_map_navigate">导航</div><!--导航按钮仅详情页地图存在-->
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <!-- top:10px;right:10px;left:64px; -->
+        <div class="map_tips01" style="position:absolute;top:10px;right:10px;left:64px;">查询：1公里内，共29家商户，展示前10家</div><!--仅列表页地图存在-->
+        <br>
+        <div class="map_tips02">查询：1公里内，无酒店客房团购，请滑动 地图后查询</div>
+        <br>
+        <div class="map_tips02">当前范围过大，请放大地图查询</div>
+        <br>
+        <div class="map_tips02">当前范围没有查询到团购，请缩小地图查询</div>
+        <br>
+        <div class="map_tips02">当前范围没有查询到团购，请缩小地图查询</div>
+        <br>
+        <!-- left:58px;bottom:10px;right:10px; -->
+        <div class="map_btn_search">查询屏幕范围内的团购</div>
+    </section>
+	<div class="cui-toast">
+        <div class="cui-layer-padding">
+            <div class="cui-layer-content">无法获取您的位置，请稍后重试</div>
+        </div>
+    </div>
+	<div class="pop_bg" style="display:none;"></div>
+	<ul class="map_navigate" style="display:none;">
+		<li class="base_btn01">百度地图</li>
+		<li class="base_btn01">苹果自带地图</li>
+		<li class="base_btn01">撤销</li>
+	</ul>
+	<!--/END 弹窗：导航-->
+</body>
+</html>

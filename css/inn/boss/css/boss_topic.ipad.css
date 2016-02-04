@@ -1,0 +1,53 @@
+/* reset start */
+html,body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,img,legend,input,textarea,p,blockquote,th,td,em,button{margin:0;padding:0;}
+body{background-color:#f3f3f3 !important;font:16px/1.5 "Helvetical Neue",Verdana,Arial,"Heiti SC","Heiti SC light",STHeiti,STXihei,sans-serif;color:#333;-webkit-font-smoothing:antialiased;-webkit-text-size-adjust:100%;}
+img,fieldset{border:none;}
+input,textarea,button{font-size:16px;font-family:"Helvetical Neue",Verdana,Arial,"Heiti SC","Heiti SC light",STHeiti,STXihei,sans-serif;outline:none;}
+select{font-size:14px;font-family:"Helvetical Neue",Verdana,Arial,"Heiti SC","Heiti SC light",STHeiti,STXihei,sans-serif;}
+input{border-radius:0;}
+input[type="checkbox"]{border-radius:5px;}
+input[type="radio"]{border-radius:8px;}
+input[type="button"],input[type="submit"],input[type="reset"]{-webkit-appearance:none;}
+table{border-collapse:collapse;border-spacing:0;}
+a{color:#06c;text-decoration:none;}
+a:focus{text-decoration:underline;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-family:"Helvetical Neue",Verdana,Arial,"Heiti SC","Heiti SC light",STHeiti,STXihei,sans-serif;}
+ul,ol{list-style:none;}
+dfn{font-style:normal;font-family:Arial;}
+.basefix:after{clear:both;content:'\20';display:block;height:0;visibility:hidden;overflow:hidden;}
+/* reset end */
+/*******************************************************************start*********************************************************************/
+.layoutfix{display:inline-block;}
+.layoutfix{display:block;overflow:hidden;}
+.base_warning{color:#F00;font-weight:normal;font-size:12px;}
+.float_left{float:left !important;}
+.float_right{float:right !important;}
+.base_txtsilver{color:#999;}
+.invisible{visibility:hidden !important;}
+.hidden{display:none !important;}
+.base_txtdiv{cursor:pointer;}
+.border_none{border:0 none !important;}
+/*****************************************************************end***********************************************************************/
+
+/* head width */
+.cui_hd, .cui_nav{width:1000px;}
+
+/*structure start*/
+#base_bd{width:980px; margin:0 auto; padding:0 10px; *zoom:1;}
+/*footer*/
+.base_ft_wrap{border-top:1px dashed #9ECCF5;padding-top:18px;}
+p.copyright{font-family:Verdana,simsun,sans-serif;}
+/*structure end*/
+
+/*  buttons */
+.btn_search{text-shadow:1px 1px 0 #CF7000;background-color:#ffb000;border:solid 1px #E77C00;}
+.c_btn{
+    display: block; padding: 7px 0; _padding: 9px 0 5px;
+    color: #fff; background-color: #46a0fc;
+    text-align: center; font-size: 18px; font-family: 'microsoft yahei', simsun, sans-serif;
+    border-radius: 3px;
+}
+.c_btn:hover{
+    background-color: #68d9fa;
+    text-decoration: none;
+}

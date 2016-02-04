@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>订单填写</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="http://webresource.c-ctrip.com/styles/h5/common/main.css" rel="stylesheet" />
+<link href="css/tuan.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <div style="height:48px;">
+        <header>
+            <b class="icon_home i_bef" id="js_home"></b>
+            <i class="icon_phone i_bef"></i>
+            <h2>订单填写</h2><i id="js_return" class="returnico"></i>
+        </header>
+    </div>
+    <article  class="cont_wrap">
+        <ul class="fillin_list">
+            <li>登录后预订更便捷<a href="javascript:;" class="btns_login">马上登录</a></li>
+        </ul>
+        <div class="order_htl_info">
+            <div class="order_htl_info_t">上海惠灵顿酒店（豪华房上海惠灵顿酒店（豪华房-夏季大床房）</div>
+            <div class="fillin_price">单价：<span>&yen;1096</span></div>
+        </div>
+        <ul class="fillin_list">
+            <li><label>购买数量</label>
+	            <div class="btn_fine_tuning">
+		            <!--可用状态.minus、.plus，不可用状态.minus.num_invalid、.plus.num_invalid -->
+		            <i class="minus num_invalid"></i><span class="numtext">3</span><i class="plus"></i>
+	            </div>
+            </li>
+            <li><label>手机</label><span class="inputbox"><input type="text" placeholder="用于接收团购券号和密码" /></span><i class="icon icon_del"></i><i class="icon icon_user"></i></li>
+            <li class="arr_r"><label>发票</label><span class="txt">不需要</span></li>
+            <li class="arr_r"><label>发票</label><span class="txt">需要</span></li>
+            <li class="arr_r"><label>优惠券</label><span class="txt">未使用</span>
+            <li class="arr_r"><label>优惠券</label><span class="num">(2张)</span><span class="txt">未使用</span></li>
+            <li class="arr_r"><label>优惠券</label><span class="promo_code">ABCDEFGHIJK<span>限1单使用</span></span><span class="txt2">- &yen; 20</span>
+            <li class="arr_r"><label>优惠券</label><span class="promo_code">活动标题只显示一行文字，超出<span>限1单使用</span></span><span class="txt2">- &yen; 2000</span>
+        </ul>
+        <p class="tips_attention"><!-- <span class="color_orange">此发票由携程开具</span> -->产品发票由酒店提供，请入住酒店时向酒店前台索取。</p>
+        <ul class="btm_price">
+            <li class="item03">
+                <span class="text_transparent text_size12">订单总额：</span>¥ 2000
+            </li>
+            <!-- 已过期、已抢完 class="btm_tuan_btn_dis" -->
+            <li class="btm_tuan_btn">马上团</li>
+        </ul>
+    </article> 
+    <div class="modal modal_fillin">
+        <i class="close"></i>
+        <div class="title">选择手机号</div>
+        <ul class="content">
+            <li class="choosed">12345678</li>
+            <li>1223456</li>
+            <li>1223456</li>
+            <li>1223456</li>
+        </ul>
+    </div>   
+</body>
+</html>

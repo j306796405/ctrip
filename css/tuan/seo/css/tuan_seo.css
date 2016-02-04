@@ -1,0 +1,109 @@
+@charset "utf-8";
+body{background-color:#efefef;}
+input.place_search{font-family:Arial,"Lucida Grande",Verdana,"Microsoft YaHei",hei;letter-spacing:0;}
+.cont_wrap{margin:0;}
+.font_blue{color:#099fde;}
+.more_detail{text-decoration: none;color:#099fde;float: right;}
+.more_detail i{position:relative;display: inline-block;width: 6px;height: 6px;border-width:2px 2px 0 0;border-color: #099fde;border-style: solid;bottom: 1px; margin-right:2px;}
+.i_tri{border-width: 6px 6px 0 6px;border-color:#fff transparent transparent;border-style: solid;display: inline-block;vertical-align: middle;margin-left: 2px}
+.list_s{background-color:#e6f0f7;padding:8px;position:relative;z-index:1;padding:8px;width:100%;-webkit-box-sizing:border-box;box-sizing:border-box;background-color:#e6f0f7;}
+.list_s:before{display:block;position:absolute;z-index:1;left:14px;top:12px;width:12px;height:12px;border:2px solid #9a9a9a;content:'\20';border-radius:50%;}
+.list_s:after{display:block;position:absolute;z-index:2;width:8px;height:2px;top:26px;left:26px;content:'\20';background-color:#9a9a9a;-webkit-transform:rotateZ(40deg);-ms-transform:rotateZ(40deg);transform:rotateZ(40deg);}
+.list_s .list_s_input{padding-left:32px;background-color:#fff;height:28px;line-height:normal;border-radius:14px;}
+.ui_arrow_up span:before,.ui_arrow_up span:after,
+.ui_arrow_down span:before,.ui_arrow_down span:after
+{float: right;content: "";width: 2px;height: 10px;margin: 5px 4px 0 0;background-color: #ababab;}
+.btn_more i,.more_detail i,.ui_arrow_up span:before,.ui_arrow_down span:after{-webkit-transform:rotate(45deg);
+-moz-transform:rotate(45deg);
+-ms-transform:rotate(45deg);
+-o-transform:rotate(45deg);
+transform:rotate(45deg);}
+.ui_arrow_up span:after ,.ui_arrow_down span:before{-webkit-transform:rotate(-45deg);
+-moz-transform:rotate(-45deg);
+-ms-transform:rotate(-45deg);
+-o-transform:rotate(-45deg);
+transform:rotate(-45deg);}
+/*bottom-1px*/
+.bottom_1px{background-image:-webkit-linear-gradient(top, transparent 50%, #ddd 50%); background-repeat:repeat-x; background-size:100% 1px; background-position:left bottom;}
+/*top-1px*/
+.top_1px{background-image:-webkit-linear-gradient(top, #ddd 50%, transparent 50%); background-repeat:repeat-x; background-size:100% 1px; background-position:left top;}
+/*left-1px*/
+.left_1px{background-image:-webkit-linear-gradient(left, #ddd 50%, transparent 50%); background-repeat:repeat-y; background-size:1px 100%; background-position:left top;}
+/*right-1px*/
+.right_1px{background-image:-webkit-linear-gradient(left, transparent 50%, #ddd 50%); background-repeat:repeat-y; background-size:1px 100%; background-position:right top;}
+/*all-1px*/
+.all_1px{background-image:-webkit-linear-gradient(top, #ddd 50%, transparent 50%), -webkit-linear-gradient(left, transparent 50%, #ddd 50%), -webkit-linear-gradient(top, transparent 50%, #ddd 50%), -webkit-linear-gradient(left, #ddd 50%, transparent 50%); background-repeat:repeat-x,  repeat-y; background-size:100% 1px, 1px 100%; background-position:left top, right top, left bottom, left top;}
+/*top_bottom-1px*/
+.top_bottom_1px{background-image:-webkit-linear-gradient(top, #ddd 50%, transparent 50%), -webkit-linear-gradient(top, transparent 50%, #ddd 50%); background-repeat:repeat-x; background-size:100% 1px; background-position:left top, left bottom;}
+
+
+/*brand_list S*/
+.sec_brandlist{padding: 10px;}
+.sec_brandlist:after{content:""; display:table; clear:both;}
+.sec_brandlist li{float: left;width: 25%;box-sizing:border-box;text-align: center;padding:5px 5px 5px 8px; height:100px;}
+.sec_brandlist img{display:block; margin:0 auto 5px; width:64px; height:64px; border-radius: 50%;}
+.sec_brandlist li span{font-size: .857em;display: block;text-overflow:ellipsis;overflow: hidden;white-space: nowrap;color: #333}
+/*brand_list E*/
+
+/*city_hotel S*/
+.pro_list li {position:relative; z-index:1; overflow: hidden; background: #fff; border-bottom: 1px solid #ddd; }
+.pro_list_imgbox{float:left;position:relative;z-index:1;width:96px;height:96px;background:#efefef url(http://pic.c-ctrip.com/h5/tuan/noimg.png) 50% 50% no-repeat;}
+.pro_list_imgbox img {width:96px; height:96px; }
+.pro_list_info {position: relative; z-index:1; min-height:96px; margin-left:96px; padding: 0 10px; } 
+.pro_list_tit{height: 32px; padding-top:10px; line-height: 16px; color: #434343; overflow: hidden;font-size: 1.143em}
+.pro_list_rank {height:24px; padding-top:5px; font-size: 0.9357em; color: #999; }
+.pro_list_txt{overflow:hidden;font-size:0.857em;border:1px solid #099fde;border-radius: 2px;padding: 2px}
+.pro_list_sold{position:absolute; top:50px; right:20px; z-index:1; color:#999;}
+.index_hot .pro_list_price{color:#ff9a14;}
+.pro_list_price {position:absolute; z-index:5; top:70px; right:20px; height: 22px; color: #ff9a14; font-size:1.2em; line-height:20px; }
+.pro_list_rank i {font-weight: bold; font-size:1.2em; vertical-align: baseline; }
+.pro_list_oldprice {margin:0 10px;  color: #ccc;font-size: 0.86em; }
+.pro_list_price i{font-size: 1.25em}
+/*city_hotel E*/
+
+/*city_list S*/
+.cui-city-n li.ui_arrow_up,.cui-city-n li.ui_arrow_down{padding-right: 10px;background-color: #f9f9f9}
+.cui-city-n li.ui_arrow_down{padding-bottom: 0}
+li.ui_arrow_up span,li.ui_arrow_down span{display: block;}
+li.ui_arrow_down ul{margin:10px -10px 0;background-color: #fff;border-top: 1px solid #bcbcbc }
+li.ui_arrow_down li:last-child{border-bottom: none;}
+.cui-city-itmes .cui-city-n li.current{color:#099fde;}
+.cui-city-itmes .cui-city-n li{color: #333}
+/*city_list E*/
+
+/*brand_hotel S*/
+.sec_brand_info{background-color: #fff;padding: 10px;position: relative;overflow: hidden;}
+.sec_brand_info .brand_logo{float: left;width: 64px;text-align: center; font-size:0.928em; margin-right:10px;}
+.sec_brand_info .brand_logo span{display: block;overflow: hidden;white-space: nowrap;text-overflow:ellipsis;margin-top: 4px}
+.sec_brand_info .brand_logo img{width: 100%;vertical-align: middle;border:1px solid #ccc;border-radius: 50% ;box-sizing:border-box;background: #fff}
+.sec_brand_info .brand_info_txt{overflow:hidden; font-size:0.857em;}
+.sec_brand_info .brand_info_txt p{height: 6em;overflow: hidden;overflow: hidden;color: #666;
+text-overflow: ellipsis;
+display: -webkit-box;
+-webkit-line-clamp: 4;
+-webkit-box-orient: vertical;
+}
+
+.sec_city_list{margin: 10px;overflow: hidden;text-align: center;font-size: 1em;}
+.sec_city_list li{width: 25%;box-sizing:border-box;border:1px solid #ddd;border-right: none;float: left;margin-bottom: 6px;height: 3em;line-height: 3em;background-color: #fff; white-space:nowrap; overflow:hidden; text-overflow:ellipsis; font-size:0.928em;}
+.sec_city_list li:nth-child(4n),.sec_city_list li:last-child{border-right: 1px solid #ddd;}
+.sec_city_list .current_city{line-height: 1.2; padding-top:4px;}
+.sec_city_list .current_city span{color:#099fde;}
+.sec_city_list .current_city:after{content: "当前城市";display: block; font-size:10px;color: #666}
+
+.sec_brandhotel_list .brandhotel_list{margin-bottom: 16px}
+.sec_brandhotel_list .brandhotel_title{padding-left: 10px;line-height: 2em; font-size:1.071em;font-weight: normal;}
+.brandhotel_list li{background-color: #fff;}
+.brandhotel_list .city_hotel_title{height: 2.5em;line-height: 2.5em;padding: 0 10px;background-color:#fff; position:relative;}
+.brandhotel_list .city_hotel_title h4{font-size:1.142em;font-weight: bold;}
+.brandhotel_list .city_hotel_title .more_detail{position:absolute; top:0; right:10px; font-size:1.071em;}
+
+.sec_flayer_deinfo{position: absolute;background: rgba(0,0,0,0.8);top: 94px;bottom: 0;left: 0;right: 0;color: #fff;padding: 20px;z-index: 2}
+.sec_flayer_deinfo h2{font-size: 1.143em;margin-top: 20px}
+.sec_flayer_deinfo p:nth-child(2){margin-bottom: 10px;}
+/*brand_hotel S*/
+
+.base_btn01{line-height:40px;text-align:center;color:#099fde;background-color:#fff;}
+.base_btn01:active{background-color:#f5f5f5;}
+.btn_more{margin:10px 0;-webkit-border-radius:3px;border-radius:3px;}
+.btn_more i{float:right;width: 6px;height: 6px;border-width:2px 2px 0 0;border-color: #d3d3d3;border-style: solid;top: 15px; right:14px;position: relative;}

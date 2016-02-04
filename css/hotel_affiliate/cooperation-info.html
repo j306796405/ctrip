@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>合作信息</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link href="css/main.css" rel="stylesheet" />
+<link href="css/affiliate.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <div style="height:48px;">
+        <header>
+            <h1>合作信息</h1>
+            <i id="js_return" class="returnico"></i>
+        </header>
+    </div>
+    <section class="cont_wrap">
+        <div class="pt10">
+        	<ul class="base_list">
+                <li>
+                    <div class="title">佣金率(%)</div>
+                    <input type="text" placeholder="请输入佣金率" value="15" />
+                    <div class="btn_basis02" style="display:block;"></div>
+                </li>
+                <li class="no_pdr">
+                    <div class="title">早餐份数</div>
+                    <div class="aff_broadband">
+                        <div class="broadband aff_tab">
+                            <span>现付</span>
+                            <span class="current">预付</span>
+                            <span>现付+预付</span>
+                        </div>
+                    </div>
+                </li>
+        	</ul>
+        </div>
+        <div class="title_base02">
+            <span class="title_info">现付、预付说明</span>
+        </div>
+        <div class="pt10">
+            <div class="title_base01">上传证件照（选填）</div>
+
+            <div class="room_type_upload">
+                <div class="file_list">
+                    <div class="file_item_wrap">
+                        <div class="file_item_tit">营业执照</div>
+                        <div class="add_file_item">
+                            <input type="file" class="inp_file">
+                        </div>
+                    </div>
+                    <div class="file_item_wrap">
+                        <div class="file_item_tit">税务许可证</div>
+                        <div class="add_file_item">
+                            <input type="file" class="inp_file">
+                        </div>
+                    </div>
+                    <div class="file_item_wrap">
+                        <div class="file_item_tit">特种行业许可证</div>
+                        <div class="add_file_item">
+                            <input type="file" class="inp_file">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--<div class="passport">
+                <dl>
+                    <dt>营业执照</dt>
+                    <dd class="uploaded">
+                        <img src="i/zzz_pic01.jpg" alt="">
+                        <div class="btn_delete"></div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>税务许可证</dt>
+                    <dd class="loading_image">
+                        <img src="i/zzz_pic01.jpg" alt="">
+                        <div class="icon_loading"></div>
+                        <div class="percent">75%</div>
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>特种行业许可证</dt>
+                    <dd>
+                        <input type="file" />
+                    </dd>
+                </dl>
+            </div>-->
+        </div>
+        <div class="mt10">
+        <div class="title_base01">上传酒店图片（选填）</div>
+        <div class="room_type_upload">
+            <div class="room_type_tit">酒店外观</div>
+            <div class="file_list">
+                <div class="file_item_wrap">
+                    <div class="file_item">
+                        <img class="uploaded_img" src="http://pic.c-ctrip.com/h5/hotel_affiliate/zzz_img_upload.png"
+                             alt="">
+                    </div>
+                </div>
+                <div class="file_item_wrap">
+                    <div class="file_item">
+                        <img class="uploaded_img" src="http://pic.c-ctrip.com/h5/hotel_affiliate/zzz_img_upload.png"
+                             alt="">
+                    </div>
+                </div>
+                <div class="file_item_wrap">
+                    <div class="add_file_item">
+                        <input type="file" class="inp_file">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="room_type_upload">
+            <div class="room_type_tit">酒店内景</div>
+            <div class="file_list">
+                <div class="file_item_wrap">
+                    <div class="add_file_item add_file_item_active">
+                        <input type="file" class="inp_file">
+                    </div>
+                </div>
+                <div class="file_item_wrap">
+                    <div class="file_item">
+                        <i class="ico_saving"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <div class="pt10">
+            <div class="terms">
+                <div class="mod_checkbox">
+                    <input type="checkbox" id="terms_chk" />
+                    <label for="terms_chk"></label>
+                </div>
+                我方已详细阅读、接受并同意<span>条款与协议</span></div>
+        </div>
+        <div class="wrap_btn01">
+            <div class="btn_basis01">下一步，提交</div>
+        </div>
+    </section>
+    <div class="mask_tip">
+        <div class="mask_tip_wrapper">
+            <h4>现付、预付说明</h4>
+            <dl>
+                <dt>现付</dt>
+                <dd>客人在酒店前台支付房费；</dd>
+                <dd>酒店将佣金返还携程；</dd>
+            </dl>
+            <dl>
+                <dt>预付</dt>
+                <dd>客人在携程预订时支付房费；</dd>
+                <dd>携程扣除佣金后结算支付给酒店；</dd>
+                <dd>该方式可提升客户订单成交率；</dd>
+            </dl>
+            <dl>
+                <dt>现付+预付</dt>
+                <dd>支持2种方式付款，客人在携程预订时可自主选择付款方式；</dd>
+            </dl>
+        </div>
+    </div>
+    <script src="js/zepto.min.js"></script>
+    <script src="js/ui.js"></script>
+    <script>
+        document.getElementsByClassName('title_info')[0].onclick=function(){
+            document.getElementsByClassName('mask_tip')[0].className="mask_tip animate_in";
+        };
+        document.getElementsByClassName('mask_tip')[0].onclick=function(){
+            this.className="mask_tip";
+        };
+    </script>
+</body>
+</html>

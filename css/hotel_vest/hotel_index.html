@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>酒店官网首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/ctrip.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/data-img.js"></script>
+    <script>
+        $(function(){
+            var isIE = function(ver){
+                var b = document.createElement('b')
+                b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+                return b.getElementsByTagName('i').length === 1
+            }
+            if(!isIE(6) && !isIE(7) && !isIE(8)){
+                $('.data_img').dataImg({
+                    sml: 768,
+                    lrg: 1000,
+                    resize: true
+                });
+            }else{
+                $('.data_img').dataImg({
+                    lrg: 1000,
+                    resize: true
+                });
+            }
+        })
+    </script>
+</head>
+<body>
+    <div class="base_hd_wrap">
+        <div class="base_hd">
+            <h1 class="htl_name_wrap">
+                <p class="htl_name">索菲特大大酒店索菲特大大酒店</p>
+                <span class="stars stars_3"></span>
+            </h1>
+            <ul class="base_nav">
+                <li class="current"><a href="javascript:;">首页</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">预定</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">酒店介绍</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">地理位置</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">顾客点评</a><i class="nav_arr"></i></li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        $('.base_nav li').click(function(){
+            $('.base_nav li').removeClass('current');
+            $(this).addClass('current');
+        })
+    </script>
+    <div class="index_photo_wall_wrap">
+        <div class="index_photo_wall clearfix">
+            <a href="###" class="section_1"><img class="data_img" src="http://placehold.it/1x1" alt="" data-sml="images/zzz_photo_wall_s_1.png" data-lrg="images/zzz_photo_wall_1.png"/></a>
+            <a href="###" class="section_2 section_2_up"><img class="data_img" src="http://placehold.it/1x1" alt="" data-sml="images/zzz_photo_wall_s_1.png" data-lrg="images/zzz_photo_wall_2.png"/></a>
+            <a href="###" class="section_2 section_2_down"><img class="data_img" src="http://placehold.it/1x1" alt="" data-sml="images/zzz_photo_wall_s_1.png" data-lrg="images/zzz_photo_wall_3.png"/></a>
+            <a href="###" class="section_3"><img class="data_img" src="http://placehold.it/1x1" alt="" data-sml="images/zzz_photo_wall_s_1.png" data-lrg="images/zzz_photo_wall_4.png"/></a>
+        </div>
+        <ul class="index_photo_wall_nav">
+            <li></li>
+            <li class="current"></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    <div class="base_bd_wrap">
+        <div class="base_bd">
+            <div class="index_main_wrap">
+                <!-- 酒店介绍 -->
+                <div class="c_section_sides_wrap clearfix">
+                    <div class="c_section inn_info_section c_section_side">
+                        <h4 class="c_section_hd">
+                            <i class="ico_inn_info"></i>客栈老板
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="inn_info_boss">
+                                <img src="images/img_inn_boss.png" alt=""/>
+                                <div class="inn_info_boss_tips">
+                                    <strong>老板-柯铁军</strong>
+                                    <span>来自：武汉</span>
+                                </div>
+                            </div>
+                            <p class="inn_info_txt c_section_link">
+                                70后的我懂的怎样去生活，怎样去感受自己的客栈小院，去感受客人们的想法，客人开心就是我的开心和满意。
+                            </p>
+                            <a href="javascript:;" class="check_more">【查看全部】</a>
+                        </div>
+                    </div>
+                    <div class="c_section htl_info_section c_section_side">
+                        <h4 class="c_section_hd">
+                            <i class="ico_htl_info"></i>客栈简介
+                        </h4>
+                        <div class="c_section_bd">
+                            <p class="htl_info_tips c_section_link">X饭店虽地处寸土寸金的中央商务区，X饭店的452套客房却全部采用低楼层设计，令每一位宾客都能充分享受绿色与阳光。<br/>
+                                XXXXXX饭店客房宽敞舒适且设施完善，具有国际水准，包括商务客房、行政客房及豪华商务套房。包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，线上网、设施齐备的商务中心，包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，线上网、设施齐备的商务中心包括商务客房设施，线上网、设施齐备的商务中免费免费新闻客房宽敞舒适且设施完善，具有国际水准，包括商务客房、行政客房及豪华商务套房。包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，线上网、设施齐备的商务中心，包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，线上网、设施齐备的商务中心包括商务客房设施，线上网、设施齐备的商务中免费免费新闻</p>
+                            <a href="javascript:;" class="check_more">【查看全部】</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="c_section htl_info_section">
+                    <h4 class="c_section_hd">
+                        <i class="ico_htl_info"></i>酒店简介
+                    </h4>
+                    <div class="c_section_bd">
+                        <p class="htl_info_tips c_section_link">X饭店虽地处寸土寸金的中央商务区，X饭店的452套客房却全部采用低楼层设计，令每一位宾客都能充分享受绿色与阳光。<br/>
+                            XXXXXX饭店客房宽敞舒适且设施完善，具有国际水准，包括商务客房、行政客房及豪华商务套房。包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，线上网、设施齐备的商务中心，包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，线上网、设施齐备的商务中心包括商务客房设施，线上网、设施齐备的商务中免费免费新闻客房宽敞舒适且设施完善，具有国际水准，包括商务客房、行政客房及豪华商务套房。包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，线上网、设施齐备的商务中心，包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，线上网、设施齐备的商务中心包括商务客房设施，线上网、设施齐备的商务中免费免费新闻</p>
+                        <a href="javascript:;" class="check_more">【查看全部】</a>
+                    </div>
+                </div>
+                <!-- 房型介绍 -->
+                <div class="c_section room_section">
+                    <h4 class="c_section_hd">
+                        <a href="###" class="c_section_more">查看全部</a>
+                        <i class="ico_room_info"></i>房型介绍
+                    </h4>
+                    <div class="c_section_bd">
+                        <div class="room_section_list_wrap">
+                            <ul class="room_section_list clearfix">
+                                <li>
+                                    <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="" />
+                                    <div class="room_info">
+                                        <a class="c_btn btn_book" href="###">预定</a>
+                                        <span class="room_info_txt">暗香(一楼园景标间)暗香(一楼园景标间)暗香(一楼园景标间)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="" />
+                                    <div class="room_info">
+                                        <a class="c_btn btn_book" href="###">预定</a>
+                                        <span class="room_info_txt">暗香(一楼园景标间)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="" />
+                                    <div class="room_info">
+                                        <a class="c_btn btn_book" href="###">预定</a>
+                                        <span class="room_info_txt">暗香(一楼园景标间)</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="" />
+                                    <div class="room_info">
+                                        <a class="c_btn btn_book" href="###">预定</a>
+                                        <span class="room_info_txt">last暗香(一楼园景标间)</span>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="room_section_list_nav">
+                                <li class="current"></li>
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_section_sides_wrap clearfix">
+                    <!-- 地理位置 -->
+                    <div class="c_section coordinate_section c_section_side">
+                        <h4 class="c_section_hd">
+                            <a href="###" class="c_section_more">查看全部</a>
+                            <i class="ico_coordinate"></i>地理位置
+                        </h4>
+                        <div class="c_section_bd">
+                            <p class="coordinate_info c_section_link">上海卢湾区雁荡路99号(淮海路商圈)  【02151585888】上海卢湾区雁荡路99号(淮海路商圈)  【02151585888】上海卢湾区雁荡路99号(淮海路商圈)  【02151585888】</p>
+                            <div class="coordinate_map">
+                                <img src="images/zzz_map.png" alt=""/>
+                                <a class="c_btn btn_check" href="###"><i class="ico_search"></i> 查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 顾客点评 -->
+                    <div class="c_section guest_comment_section c_section_side">
+                        <h4 class="c_section_hd">
+                            <i class="ico_guest_comment"></i>顾客点评<span class="comment_number">(来自123456位顾客)</span>
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="guest_comment_list">
+                                <ul>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment c_section_link">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="c_section_sides_wrap clearfix c_no_comment">
+                    <!-- 地理位置 -->
+                    <div class="c_section coordinate_section c_section_side">
+                        <h4 class="c_section_hd">
+                            <i class="ico_coordinate"></i>地理位置
+                        </h4>
+                        <div class="c_section_bd">
+                            <p class="coordinate_info c_section_link">上海卢湾区雁荡路99号(淮海路商圈)  【02151585888】上海卢湾区雁荡路99号(淮海路商圈)  【02151585888】上海卢湾区雁荡路99号(淮海路商圈)  【02151585888】</p>
+                            <div class="coordinate_map">
+                                <img src="images/zzz_map.png" alt=""/>
+                                <a class="c_btn btn_check" href="###"><i class="ico_search"></i> 查看详情</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 顾客点评 -->
+                    <div class="c_section guest_comment_section c_section_side"">
+                        <h4 class="c_section_hd">
+                            <i class="ico_guest_comment"></i>顾客点评<span class="comment_number">(来自123456位顾客)</span>
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="guest_comment_list">
+                                <ul>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment c_section_link">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <div class="user_info">138****1235 用户说：</div>
+                                        <p class="user_comment">
+                                            酒店位置很好，虽然门面有点不是那么显眼，内部装潢 也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。特别喜欢衣帽间
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 保证 -->
+                <div class="guarantee_wrap clearfix">
+                    <div class="guarantee_section">
+                        <i class="ico_guarantee_price"></i>
+                        <h4 class="guarantee_hd">价格保证</h4>
+                        <p class="guarantee_info">价格真实优惠，<br/>无附加服务费！</p>
+                    </div>
+                    <div class="guarantee_section">
+                        <i class="ico_guarantee_surplus"></i>
+                        <h4 class="guarantee_hd">到店有房保证</h4>
+                        <p class="guarantee_info">订单一经确认，<br/>保证100%到店有房！</p>
+                    </div>
+                    <div class="guarantee_section">
+                        <i class="ico_guarantee_price"></i>
+                        <h4 class="guarantee_hd">酒店品质保证</h4>
+                        <p class="guarantee_info">酒店均经严格质检，<br/>保证实况与房型描述一致</p>
+                    </div>
+                    <div class="guarantee_section">
+                        <i class="ico_guarantee_service"></i>
+                        <h4 class="guarantee_hd">服务保证</h4>
+                        <p class="guarantee_info">支持在线管理您的预订，<br/>取消预订简单方便</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="base_foot_wrap">
+        <div class="base_foot">
+            <div class="base_foot_crumb">
+                <a href="###">酒店官网</a> > <a href="###">酒店大全</a> > <a href="###">上海酒店大全</a> > XXX大酒店
+            </div>
+            <div class="foot_seo_list_wrap">
+                <dl class="foot_seo_list clearfix">
+                    <dt>热门酒店</dt>
+                    <dd><a href="###">速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                </dl>
+            </div>
+            <div class="foot_seo_list_wrap">
+                <dl class="foot_seo_list clearfix">
+                    <dt>友情链接</dt>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright© 1999-2015, ctrip.com. All rights reserved.</div>
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>申请退款</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="http://webresource.c-ctrip.com/styles/h5/common/main.css" rel="stylesheet" />
+<link href="css/tuan.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <div style="height:48px;">
+        <header>
+            <b class="icon_home i_bef" id="js_home"></b>
+            <h2>申请退款</h2><i id="js_return" class="returnico"></i>
+        </header>
+    </div>
+    <article  class="cont_wrap">
+		<div class="tuan_title">团购信息</div>
+		<ul class="apply_refund apply_refund_info">
+			<li><span id="J_productName" class="productName">上海东鼎宾馆</span>
+				<p class="color_gray">您有<strong id="J_iscCount">0</strong>张可退的团购券，请选择要退回的数量</p>
+			</li>
+			<li>退回数量
+				<div class="btn_fine_tuning">
+					<!--可用状态.minus、.plus，不可用状态.minus.num_invalid、.plus.num_invalid -->
+					<i class="minus num_invalid"></i><span class="numtext">3</span><i class="plus"></i>
+				</div>
+			</li>
+			<li>退款金额&nbsp;&nbsp;&nbsp;&nbsp;
+				<span class="total_order_price" id="J_refundAmount">200</span>
+			</li>
+			<li id="J_refundCouponWrap">退回优惠券&nbsp;&nbsp;
+				<span class="total_order_price" id="J_refundCouponAmount">5599</span>
+			</li>
+		</ul>
+		<div class="tuan_title">退款方式</div>
+		<ul class="apply_refund choose_list">
+			<li class="checked2">退至现金余额
+				<p class="color_gray">1-2个工作日内退回携程钱包现金余额，礼品卡<br>支付部分退回礼品卡账户，无手续费</p><i class="in_checkbox_tar"></i>
+			</li>
+			<li>原路退回
+				<p class="color_gray">2-10个工作日内退回您的原支付账户，无手续费</p><i class="in_checkbox_tar"></i>
+			</li>
+		</ul>
+	    <!-- errorli 用于未选择退款方式的报错情况 -->
+	    <ul class="apply_refund choose_list">
+		    <li class="errorli">退至现金余额
+			    <p class="color_gray">1-2个工作日内退回携程钱包现金余额，礼品卡<br>支付部分退回礼品卡账户，无手续费</p>
+		    </li>
+		    <li class="errorli">原路退回
+			    <p class="color_gray">2-10个工作日内退回您的原支付账户，无手续费</p>
+		    </li>
+	    </ul>
+		<div class="tuan_title">退款原因</div>
+		<ul class="apply_refund choose_list apply_refund_reason">
+			<li>买多了/买错了</li>
+			<li>计划有变，没时间消费</li>
+			<li>预约不上</li>
+			<li>商家无法验券</li>
+			<li>产品的描述与实际不符</li>
+			<li>商家说没有该团购产品</li>
+			<li class="choosed">其他</li>
+		</ul>
+	    <!-- reason_other_text 仅当选择“其他”选项时显示，否则不可见 -->
+		<div class="mg10 reason_other_text">
+			<textarea class="in_reason_other" placeholder="请输入其他退款原因。"></textarea>
+		</div>
+		<div class="mg10">
+			<div class="m_BorderRadius btn_action">确认退款</div>
+        </div>
+	</article>
+	<!-- 点击确认退款，弹出此框 -->
+	<!-- 点击取消，停留在当前页面 -->
+	<!-- 点击继续退款，提示退款提交提示 -->
+    <div class="cui-pop-box">
+         <div class="cui-bd"> 
+             <p class="cui-error-tips">退款一旦提交，团购券将不能恢复。<br />请问您是否需要继续退款？</p>
+             <div class="cui-roller-btns">
+                  <div class="cui-flexbd cui-btns-cancel">取消</div>
+                  <div class="cui-flexbd cui-btns-sure">继续退款</div>
+             </div>
+         </div>
+    </div>
+    <!-- 提款提交提示 -->
+	<div class="cui-toast">
+        <div class="cui-layer-padding">
+            <div class="cui-layer-content">退款已提交<br />客服会尽快为您处理</div>
+        </div>
+    </div>
+    <!-- 未选择退款方式提示 -->
+    <div class="cui-toast">
+	    <div class="cui-layer-padding">
+		    <div class="cui-layer-content">请选择退款方式</div>
+	    </div>
+    </div>
+</body>
+</html>

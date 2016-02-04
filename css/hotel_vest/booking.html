@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>酒店官网首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/ctrip.css" />
+    <script src="js/jquery.js"></script>
+    <script>
+        $(function(){
+            $('.booking .comm_btn').click(function(){
+                $('.popup_room_detail').show();
+            })
+            $('.c_close').click(function(){
+                $('.popup_room_detail').hide();
+            })
+            function reFillTxt(){
+                if($(window).width() < 768){
+                    $('.booking .comm_btn').html('预定');
+                }else{
+                    $('.booking .comm_btn').html('立即预定');
+                }
+            }
+            reFillTxt();
+            $(window).resize(reFillTxt);
+        })
+    </script>
+</head>
+<body>
+    <div class="base_hd_wrap">
+        <div class="base_hd">
+            <h1 class="htl_name_wrap">
+                <p class="htl_name">索菲特大酒店</p>
+                <span class="stars stars_3"></span>
+            </h1>
+            <ul class="base_nav">
+                <li class="current"><a href="javascript:;">首页</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">预定</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">酒店介绍</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">地理位置</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">顾客点评</a><i class="nav_arr"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="base_bd_wrap">
+        <div class="base_bd">
+            <div class="main_content_wrap booking_content_wrap clearfix">
+                <div class="booking_main_nav">
+                    <div class="c_section online_booking_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_online_booking"></i>在线预订
+                        </h4>
+                        <div class="c_section_bd">
+                            <label class="form_txt">入住时间</label>
+                            <span class="inp_date_picker"><input type="text" class="inp" value="2015-02-26"><i class="ico_date_picker"></i></span>
+                            <label class="form_txt">离店时间</label>
+                            <span class="inp_date_picker"><input type="text" class="inp" value="2015-02-26"><i class="ico_date_picker"></i></span>
+                            <a href="###" class="comm_btn btn_check">查询</a>
+                        </div>
+                    </div>
+                    <div class="my_order_wrap">
+                        <i class="ico_my_orders"></i><a href="###">查询我的订单 ></a>
+                    </div>
+                    <div class="c_section workflow_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_booking_workflow"></i>预定流程
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="workflow_wrap">
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_check_room"></i>
+                                    <strong class="tit">查询房型</strong>
+                                    <span class="info">选择日期，确定房型</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_booking_htl"></i>
+                                    <strong class="tit">预订酒店</strong>
+                                    <span class="info">在线预订，提交订单</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_order_confirm"></i>
+                                    <strong class="tit">订单确认</strong>
+                                    <span class="info">客房确认，短信通知</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_check_in"></i>
+                                    <strong class="tit">前台入住</strong>
+                                    <span class="info">抵达酒店，办理入住</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_section service_confirm_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_service_promise"></i>服务承诺
+                        </h4>
+                        <div class="c_section_bd">
+                            <p class="service_confirm_txt">
+                                我们承诺价格公开透明，到店不会要求额外支付预订服务费。
+                                我们会为您提供干净整洁的客房环境，并有前台人员竭诚为您提供服务。
+                                我们希望每一位客人都能宾至如归，让客户满意是我们服务的唯一准则。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_section mobile_booking_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_mobile_booking"></i>手机预订
+                        </h4>
+                        <div class="c_section_bd">
+                            <img src="images/img_qr_code.png" alt="" class="img_qr_code"/>
+                            <p class="tips">扫一扫，手机查看酒店官网随时预订</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_content_wrap">
+                    <div class="c_section booking_htl_section">
+                        <h4 class="c_section_hd">
+                            <i class="ico_htl_info"></i>预订酒店
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="date_filter">
+                                <div class="date_filter_item">
+                                    <label for=""><i class="ico_date_picker_s"></i>入住时间</label><span class="inp_date_picker"><input type="text" class="inp" value="2015-02-26"/><i class="ico_date_picker"></i></span>
+                                </div>
+                                <div class="date_filter_item">
+                                    <label for=""><i class="ico_date_picker_s"></i>离店时间</label><span class="inp_date_picker"><input type="text" class="inp" value="2015-02-27"/><i class="ico_date_picker"></i></span>
+                                </div>
+                                <a href="###" class="comm_btn btn_check">查询</a>
+                                <span class="total_days">2晚</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="booking_room_form">
+                        <div class="booking_room_item">
+                            <div class="room_detail">
+                                <img src="images/zzz_room_list.png" alt="" class="img_room"/>
+                                <dl class="room_info_list clearfix">
+                                    <dt><span class="price price_format"><dfn>&yen; </dfn>1069<label> 起</label></span>豪华标准房</dt>
+                                    <dd class="single_row bedding"><a href="###" class="c_btn btn_quotation">展开报价<i class="ico_orange_d_arr"></i></a><span>床型：1张双人床（1.8米） 或 2张单人床（1.2米）</span></dd>
+                                    <dd>建筑面积：20㎡</dd>
+                                    <dd>入住人数：2人</dd>
+                                    <dd>加床：RMB 150/床/间夜</dd>
+                                    <dd>楼层：2-3层</dd>
+                                    <dd>无烟房：可安排无烟楼层</dd>
+                                    <dd class="single_row mark_info">备注信息：这是一段备注信息，就这么一行</dd>
+                                </dl>
+                            </div>
+                            <dl class="room_detail_tab clearfix">
+                                <dt>
+                                    <span class="price_name">价格名称</span>
+                                    <span class="net">宽带</span>
+                                    <span class="breakfast">早餐</span>
+                                    <span class="price">房价</span>
+                                    <span class="booking">&nbsp;</span>
+                                </dt>
+                                <dd>
+                                    <span class="price_name">豪华标准房(限时抢购)</span>
+                                    <span class="net">有线免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>106912</span>
+                                    <span class="booking"><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                                <dd>
+                                    <span class="price_name">豪华标准房豪华标准房豪华标准房(限时抢购)</span>
+                                    <span class="net">有线免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>1069</span>
+                                    <span class="booking"><span class="prepay">预付</span><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                                <dd>
+                                    <span class="price_name">豪华标准房(限时抢购)</span>
+                                    <span class="net">有线免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>1069</span>
+                                    <span class="booking"><span class="assure">担保</span><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="booking_room_item">
+                            <div class="room_detail">
+                                <img src="images/zzz_room_list.png" alt="" class="img_room"/>
+                                <dl class="room_info_list clearfix">
+                                    <dt><span class="price price_format"><dfn>&yen; </dfn>1069<label> 起</label></span>豪华标准房</dt>
+                                    <dd class="single_row bedding"><a href="###" class="c_btn btn_quotation">收起报价<i class="ico_orange_u_arr"></i></a><span>床型：1张双人床（1.8米） 或 2张单人床（1.2米）</span></dd>
+                                    <dd>建筑面积：20㎡</dd>
+                                    <dd>入住人数：2人</dd>
+                                    <dd>加床：RMB 150/床/间夜</dd>
+                                    <dd>楼层：2-3层</dd>
+                                    <dd>无烟房：可安排无烟楼层</dd>
+                                    <dd class="single_row mark_info">备注信息：这是一段备注信息，就这么一行</dd>
+                                </dl>
+                            </div>
+                            <dl class="room_detail_tab clearfix">
+                                <dt>
+                                    <span class="price_name">价格名称</span>
+                                    <span class="net">宽带</span>
+                                    <span class="breakfast">早餐</span>
+                                    <span class="price">房价</span>
+                                    <span class="booking">&nbsp;</span>
+                                </dt>
+                                <dd>
+                                    <span class="price_name">豪华标准房(限时抢购)</span>
+                                    <span class="net">免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>1069</span>
+                                    <span class="booking"><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                                <dd>
+                                    <span class="price_name">豪华标准房豪华标准房豪华标准房(限时抢购)</span>
+                                    <span class="net">免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>1069</span>
+                                    <span class="booking"><span class="prepay">预付</span><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                                <dd>
+                                    <span class="price_name">豪华标准房(限时抢购)</span>
+                                    <span class="net">免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>1069</span>
+                                    <span class="booking"><span class="assure">担保</span><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <div class="booking_room_item">
+                            <div class="room_detail">
+                                <img src="images/zzz_room_list.png" alt="" class="img_room"/>
+                                <dl class="room_info_list clearfix">
+                                    <dt><span class="price price_format"><dfn>&yen; </dfn>1069<label> 起</label></span>豪华标准房</dt>
+                                    <dd class="single_row bedding"><a href="###" class="c_btn btn_quotation">展开报价<i class="ico_orange_d_arr"></i></a><span>床型：1张双人床（1.8米） 或 2张单人床（1.2米）</span></dd>
+                                    <dd>建筑面积：20㎡</dd>
+                                    <dd>入住人数：2人</dd>
+                                    <dd>加床：RMB 150/床/间夜</dd>
+                                    <dd>楼层：2-3层</dd>
+                                    <dd>无烟房：可安排无烟楼层</dd>
+                                    <dd class="single_row mark_info">备注信息：这是一段备注信息，就这么一行</dd>
+                                </dl>
+                            </div>
+                            <dl class="room_detail_tab clearfix">
+                                <dt>
+                                    <span class="price_name">价格名称</span>
+                                    <span class="net">宽带</span>
+                                    <span class="breakfast">早餐</span>
+                                    <span class="price">房价</span>
+                                    <span class="booking">&nbsp;</span>
+                                </dt>
+                                <dd>
+                                    <span class="price_name">豪华标准房(限时抢购)</span>
+                                    <span class="net">免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>1069</span>
+                                    <span class="booking"><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                                <dd>
+                                    <span class="price_name">豪华标准房豪华标准房豪华标准房(限时抢购)</span>
+                                    <span class="net">免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>1069</span>
+                                    <span class="booking"><span class="prepay">预付</span><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                                <dd>
+                                    <span class="price_name">豪华标准房(限时抢购)</span>
+                                    <span class="net">免费</span>
+                                    <span class="breakfast">双早</span>
+                                    <span class="price price_format"><dfn>¥ </dfn>1069</span>
+                                    <span class="booking"><span class="assure">担保</span><a href="###" class="comm_btn">立即预定</a></span>
+                                </dd>
+                            </dl>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="base_foot_wrap">
+        <div class="base_foot">
+            <div class="base_foot_crumb">
+                <a href="###">酒店官网</a> > <a href="###">酒店大全</a> > <a href="###">上海酒店大全</a> > XXX大酒店
+            </div>
+            <div class="foot_seo_list_wrap">
+                <dl class="foot_seo_list clearfix">
+                    <dt>热门酒店</dt>
+                    <dd><a href="###">速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                </dl>
+            </div>
+            <div class="foot_seo_list_wrap">
+                <dl class="foot_seo_list clearfix">
+                    <dt>友情链接</dt>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright© 1999-2015, ctrip.com. All rights reserved.</div>
+
+    <div class="c_popup popup_room_detail" style="position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); transform: translate(-50%,-50%); display: none;">
+        <div class="c_popup_hd">
+            豪华大床房<span class="c_close"></span>
+        </div>
+        <div class="c_popup_bd">
+            <img class="room_img" src="images/zzz_popup_img.png" alt=""/>
+            <ul class="room_detail_list">
+                <li><i class="ico_area"></i><span class="tit">面积</span>45㎡</li>
+                <li><i class="ico_check_in_num"></i><span class="tit">可住</span>2人</li>
+                <li><i class="ico_add_bed"></i><span class="tit">加床价</span> <span class="base_orange"><dfn>&yen;</dfn>100</span></li>
+                <li><i class="ico_step"></i><span class="tit">楼层</span>2-3层</li>
+                <li><i class="ico_bed_style"></i><span class="tit">床型</span>大床2.00米，双床1.20米</li>
+                <li><i class="ico_no_smoke"></i><span class="tit">无烟</span>该房可无烟处理</li>
+                <li><i class="ico_net"></i><span class="tit">宽带</span>全部房间支持免费有线宽带</li>
+            </ul>
+            <div class="mark_tips">
+                备注信息，备注的信息该酒店不可取酒店不可取消修改，该酒店不可取消。
+            </div>
+            <div class="price_calc">
+                <div class="price_calc_item">
+                    <div class="price_calc_tips">每晚均价</div>
+                    <div class="price_calc_result">
+                        <span class="price_format"><dfn>&yen;</dfn>1885</span> <span class="plus_symbol">+</span> <span class="price_format price_format_s"><dfn>&yen;</dfn>283</span>
+                    </div>
+                </div>
+                <a href="###" class="comm_btn">预定</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

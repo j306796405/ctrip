@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>酒店官网首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/ctrip.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/template.js"></script>
+    <script>
+        $(function(){
+            var score = 4.5,
+                    total = 5;
+            $('.comment_progress .comment_grey_bg').width((total-score)/total*100+'%');
+            $('.comment_progress .ico_score_bg').css({right: (total-score)/total*100+'%'});
+        })
+    </script>
+</head>
+<body>
+    <div class="base_hd_wrap">
+        <div class="base_hd">
+            <h1 class="htl_name_wrap">
+                <p class="htl_name">索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店</p>
+                <span class="stars stars_3"></span>
+            </h1>
+            <ul class="base_nav">
+                <li><a href="javascript:;">首页</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">预定</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">简介</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">位置</a><i class="nav_arr"></i></li>
+                <li class="current"><a href="javascript:;">点评</a><i class="nav_arr"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="base_bd_wrap">
+        <div class="base_bd">
+            <div class="main_content_wrap clearfix">
+                <div class="booking_main_nav">
+                    <div class="c_section online_booking_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_online_booking"></i>在线预订
+                        </h4>
+                        <div class="c_section_bd">
+                            <label class="form_txt">入住时间</label>
+                            <span class="inp_date_picker"><input type="text" class="inp" value="2015-02-26"><i class="ico_date_picker"></i></span>
+                            <label class="form_txt">离店时间</label>
+                            <span class="inp_date_picker"><input type="text" class="inp" value="2015-02-26"><i class="ico_date_picker"></i></span>
+                            <a href="###" class="comm_btn btn_check">查询</a>
+                        </div>
+                    </div>
+                    <div class="my_order_wrap">
+                        <i class="ico_my_orders"></i><a href="###">查询我的订单 ></a>
+                    </div>
+                    <div class="c_section workflow_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_booking_workflow"></i>预定流程
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="workflow_wrap">
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_check_room"></i>
+                                    <strong class="tit">查询房型</strong>
+                                    <span class="info">选择日期，确定房型</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_booking_htl"></i>
+                                    <strong class="tit">预订酒店</strong>
+                                    <span class="info">在线预订，提交订单</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_order_confirm"></i>
+                                    <strong class="tit">订单确认</strong>
+                                    <span class="info">客房确认，短信通知</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_check_in"></i>
+                                    <strong class="tit">前台入住</strong>
+                                    <span class="info">抵达酒店，办理入住</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_section service_confirm_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_service_promise"></i>服务承诺
+                        </h4>
+                        <div class="c_section_bd">
+                            <p class="service_confirm_txt">
+                                我们承诺价格公开透明，到店不会要求额外支付预订服务费。
+                                我们会为您提供干净整洁的客房环境，并有前台人员竭诚为您提供服务。
+                                我们希望每一位客人都能宾至如归，让客户满意是我们服务的唯一准则。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_section mobile_booking_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_mobile_booking"></i>手机预订
+                        </h4>
+                        <div class="c_section_bd">
+                            <img src="images/img_qr_code.png" alt="" class="img_qr_code"/>
+                            <p class="tips">扫一扫，手机查看酒店官网随时预订</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_content_wrap">
+                    <div class="c_section htl_comment_section">
+                        <h4 class="c_section_hd">
+                            <i class="ico_comment"></i>顾客点评
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="comment_detail_wrap">
+                                <div class="comment_score_wrap">
+                                    <div class="comment_score"><em>4.8</em>/5分</div>
+                                    <span class="ico_comment_stars">
+                                        <i class="ico_comment_stars_down_bg"></i>
+                                        <i class="ico_comment_stars_up_bg ico_comment_stars_4"></i>
+                                    </span>
+                                </div>
+                                <div class="comment_progress">
+                                    <ul class="comment_progress_bg">
+                                        <li class="grade_1"></li>
+                                        <li class="grade_2"></li>
+                                        <li class="grade_3"></li>
+                                        <li class="grade_4"></li>
+                                        <li class="grade_5"></li>
+                                    </ul>
+                                    <div class="comment_grey_bg"></div>
+                                    <ul class="comment_progress_txt">
+                                        <li>非常不满意</li>
+                                        <li>不满意</li>
+                                        <li>一般</li>
+                                        <li>满意</li>
+                                        <li>非常满意</li>
+                                    </ul>
+                                    <span class="ico_score_bg">4.5</span>
+                                </div>
+                                <div class="recommend">
+                                    <p class="txt">98%顾客推荐入住</p>
+                                    <p class="by">来自<span class="base_orange">1256</span>位顾客</p>
+                                </div>
+                            </div>
+                            <div class="comment_text_wrap" id="comment_list_wrap"></div>
+                            <div class="comment_no_result">暂无点评</div>
+                            <div class="c_page_box">
+                                <div class="c_page"><a href="javascript:;" class="c_up c_up_nocurrent"><i class="ico_paging_l"></i>上一页</a> <div class="c_page_list layoutfix"><a href="javascript:;" class="current"><span>1</span></a><a value="2" href="###"><span>2</span></a><a value="3" href="###"><span>3</span></a><a value="4" href="###"><span>4</span></a><a value="5" href="###"><span>5</span></a><a value="6" href="###"><span>6</span></a><span class="c_page_ellipsis">...</span><a value="434" href="###"><span>434</span></a> </div> <a value="2" class="c_down" href="###"><span>下一页<i class="ico_paging_r"></i></span></a> <div class="c_pagevalue">共 15 页，到第<input type="text" class="c_page_num" name="cPageNum" id="cPageNum" value="1">页<input type="button" class="c_page_submit" value="确定" name="cPageBtn" id="cPageBtn">
+                                </div>
+                            </div>
+                            </div>
+                            <div class="loading_wrap">
+                                <img src="images/loading_big_c.png" class="loading_img" alt=""/>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+    <div class="base_foot_wrap">
+        <div class="base_foot">
+            <div class="base_foot_crumb">
+                <a href="###">酒店官网</a> > <a href="###">酒店大全</a> > <a href="###">上海酒店大全</a> > XXX大酒店
+            </div>
+            <div class="foot_seo_list_wrap">
+                <dl class="foot_seo_list clearfix">
+                    <dt>热门酒店</dt>
+                    <dd><a href="###">速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                </dl>
+            </div>
+            <div class="foot_seo_list_wrap">
+                <dl class="foot_seo_list clearfix">
+                    <dt>友情链接</dt>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright© 1999-2015, ctrip.com. All rights reserved.</div>
+
+    <script id="list" type="text/html">
+        <%for(i = 0; i < 6; i ++){%>
+        <div class="comment_item">
+            <div class="user_info">
+                <div class="user_name">用户昵称：</div>
+                <div class="user_id">1****3</div>
+            </div>
+            <div class="comment_text_cont">
+                <div class="comment_info">
+                    <span class="ico_comment_stars">
+                        <i class="ico_comment_stars_down_bg"></i>
+                        <i class="ico_comment_stars_up_bg ico_comment_stars_4"></i>
+                    </span>
+                    <span class="comment_score"><em class="comment_num">4.8</em> <span class="unit">分</span></span>
+                    <span class="comment_info_item room_style">入住豪华大床房</span>
+                    <span class="comment_info_item check_in_date">2015-05-26</span>
+                </div>
+                <p class="comment_text">
+                    酒店位置很好，虽然门面有点不是那么显眼，内部装潢
+                    也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。设施方面感觉还是有一些陈旧了，不过影响不大。但是前台服务感受不是很好，爱理不理的，要个早餐券也折腾了一下，这点需要批评。最搞笑的是，进去的时候客房打扫没完成，被子都没有。。。但是貌似都没有人知道。。。电话
+                    call他们的时候还一个劲不承认。。。。。。早餐很一般，食品种类少，不过这个价位也就随便吃吃了。 总体还是不错的。酒店位置很好，虽然门面有点不是那么显眼，内部装潢
+                    也还是很有风格的，算是欧式复古风，房间很大，卫生间有淋雨也有浴缸。设施方面感觉还是有一些陈旧了，不过影响不大。
+                </p>
+                <div class="comment_more">
+                    <span class="comment_user">2***6 用户说</span>
+                    <a href="###">查看全部 <i class="ico_arr_down"></i></a>
+                </div>
+                <% if(i ==3){ %>
+                <div class="comment_reply">
+                    <strong>补充点评：</strong>
+                    <p class="comment_text">
+                        设施方面感觉还是有一些陈旧了，不过影响不大。但是前台服务感受不是很好，爱理不理的，要个早餐券也折腾了一下，这点需要批评
+                    </p>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <%}%>
+    </script>
+    <script>
+        var list = template('list');
+        $('#comment_list_wrap').html(list);
+
+
+        function GetQueryString(name) {
+            var reg = new RegExp("(^|&)" + name + "=([^&]*)(&|$)");
+            var r = window.location.search.substr(1).match(reg);
+            if (r != null)return unescape(r[2]);
+            return null;
+        }
+        var type = GetQueryString('type');
+        if(type == 1){
+            $('.comment_detail_wrap, .comment_text_wrap, .c_page_box, .loading_wrap').hide();
+        }else{
+            $('.comment_no_result').hide();
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>选择城市</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta content="telephone=no" name="format-detection" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+<link href="http://webresource.c-ctrip.com/styles/h5/common/main.css" rel="stylesheet" />
+<link href="css/tuan.css" rel="stylesheet" />
+</head>
+<body id="ctripPage">
+    <aside class="cont_blue sta-fixed-t" style="margin-top:0;">
+        <!-- 搜索mod S -->
+        <!-- <div class="mod_search">
+            <div class="btn_basis_tri"></div>
+            <div class="icon_magnifier"></div>
+            <input type="text" placeholder="中文/拼音/首字母" />
+            <div class="btn_basis02" style="display:block;"></div>
+            <div class="btn_submit">搜索</div> -->
+            <!-- 搜索城市个数 -->
+            <!-- <div class="s_city_num">586个城市</div> -->
+            <!-- 搜索中 -->
+            <!-- <div class="s_city_loading"></div> -->
+            <!-- 清除按钮 -->
+            <!-- <div class="list_s_clear"></div>
+        </div> -->
+        <!-- 搜索mod E -->
+        <section class="search_wrap">
+           <div class="history_close">
+               <span class=" history_close hclose">取消</span>
+           </div>
+           <div class="place_search_box  clear-input-box">
+                <input type="text" class="place_search abs_size" placeholder="位置/品牌/名称" value="">
+                <div class="s_city_num">586个城市</div>
+                <div class="s_city_loading"></div>
+                <div class="list_s_clear"></div>
+           </div>
+       </section>
+    </aside>
+    <!-- 忽略这行注释，原来是city_box，修改为search_box_wrap -->
+    <section  class="city_box">
+	    <!--搜索结果-->
+	    <ul class="city_list searchresult">
+		    <li><em>如</em>家快捷<span class="cate">酒店</span></li>
+		    <li>上海<em>如</em>家快捷<span class="cate">地铁站</span></li>
+		    <li><em>如</em>家快捷<span class="cate">酒店</span></li>
+		    <li>上海<em>如</em>家快捷<span class="cate">地铁站</span></li>
+	    </ul>
+	    <div class="city_noresult">抱歉，没有搜索到相关信息</div>
+        <!-- 热门搜索 -->
+        <div class="his_list border_b">
+            <p class="title">热门搜索</p>
+            <div class="switch_hot">
+                <div class="sw_clip">
+                    <ul class="sw_con">
+                        <li>如家</li>
+                        <li>如家酒店</li>
+                        <li>如家连锁酒店</li>
+                        <li>如家</li>
+                        <li>如家酒店</li>
+                    </ul>
+                    <ul class="sw_con">
+                        <li>如家</li>
+                        <li>如家酒店</li>
+                        <li>如家连锁酒店</li>
+                        <li>如家</li>
+                        <li>如家酒店</li>
+                        <li>如家连锁酒店</li>
+                    </ul>
+                </div>
+                <p class="sw_nav"><i class="current"></i><i></i></p>
+            </div>
+        </div>
+        <!-- 搜索历史 -->
+        <ul class="box_list box_listHistory">
+            <li class="title">搜索历史</li>
+            <li>张江 如家</li>
+            <li>浦东陆家嘴</li>
+            <li>万豪</li>
+            <li class="act">清除搜索历史</li>
+        </ul>
+    </section>
+</body>
+</html>

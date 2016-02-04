@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>酒店官网首页</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="css/ctrip.css" />
+    <script src="js/jquery.js"></script>
+    <script src="js/data-img.js"></script>
+    <script>
+        $(function(){
+            var isIE = function(ver){
+                var b = document.createElement('b')
+                b.innerHTML = '<!--[if IE ' + ver + ']><i></i><![endif]-->'
+                return b.getElementsByTagName('i').length === 1
+            }
+            if(!isIE(6) && !isIE(7) && !isIE(8)){
+                $('.data_img').dataImg({
+                    sml: 768,
+                    lrg: 1000,
+                    resize: true
+                });
+            }else{
+                $('.data_img').dataImg({
+                    lrg: 1000,
+                    resize: true
+                });
+            }
+
+            $('.room_section_list li').click(function(){
+                $('.htl_pic_mobile_pop').show();
+            })
+        })
+    </script>
+</head>
+<body>
+    <div class="base_hd_wrap">
+        <div class="base_hd">
+            <h1 class="htl_name_wrap">
+                <p class="htl_name">索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店索菲特大酒店</p>
+                <span class="stars stars_3"></span>
+            </h1>
+            <ul class="base_nav">
+                <li class="current"><a href="javascript:;">首页</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">预定</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">酒店介绍</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">地理位置</a><i class="nav_arr"></i></li>
+                <li><a href="javascript:;">顾客点评</a><i class="nav_arr"></i></li>
+            </ul>
+        </div>
+    </div>
+    <div class="base_bd_wrap">
+        <div class="base_bd">
+            <div class="main_content_wrap clearfix">
+                <div class="booking_main_nav">
+                    <div class="c_section online_booking_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_online_booking"></i>在线预订
+                        </h4>
+                        <div class="c_section_bd">
+                            <label class="form_txt">入住时间</label>
+                            <span class="inp_date_picker"><input type="text" class="inp" value="2015-02-26"><i class="ico_date_picker"></i></span>
+                            <label class="form_txt">离店时间</label>
+                            <span class="inp_date_picker"><input type="text" class="inp" value="2015-02-26"><i class="ico_date_picker"></i></span>
+                            <a href="###" class="comm_btn btn_check">查询</a>
+                        </div>
+                    </div>
+                    <div class="my_order_wrap">
+                        <i class="ico_my_orders"></i><a href="###">查询我的订单 ></a>
+                    </div>
+                    <div class="c_section workflow_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_booking_workflow"></i>预定流程
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="workflow_wrap">
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_check_room"></i>
+                                    <strong class="tit">查询房型</strong>
+                                    <span class="info">选择日期，确定房型</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_booking_htl"></i>
+                                    <strong class="tit">预订酒店</strong>
+                                    <span class="info">在线预订，提交订单</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_order_confirm"></i>
+                                    <strong class="tit">订单确认</strong>
+                                    <span class="info">客房确认，短信通知</span>
+                                </div>
+                                <div class="workflow_row step_arr"><i class="ico_step_arr"></i></div>
+                                <div class="workflow_row">
+                                    <i class="ico_workflow_check_in"></i>
+                                    <strong class="tit">前台入住</strong>
+                                    <span class="info">抵达酒店，办理入住</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_section service_confirm_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_service_promise"></i>服务承诺
+                        </h4>
+                        <div class="c_section_bd">
+                            <p class="service_confirm_txt">
+                                我们承诺价格公开透明，到店不会要求额外支付预订服务费。
+                                我们会为您提供干净整洁的客房环境，并有前台人员竭诚为您提供服务。
+                                我们希望每一位客人都能宾至如归，让客户满意是我们服务的唯一准则。
+                            </p>
+                        </div>
+                    </div>
+                    <div class="c_section mobile_booking_nav">
+                        <h4 class="c_section_hd">
+                            <i class="ico_mobile_booking"></i>手机预订
+                        </h4>
+                        <div class="c_section_bd">
+                            <img src="images/img_qr_code.png" alt="" class="img_qr_code"/>
+                            <p class="tips">扫一扫，手机查看酒店官网随时预订</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="inner_content_wrap introduce_content_wrap">
+                    <div class="c_section_sides_wrap clearfix">
+                        <div class="c_section inn_info_section c_section_side">
+                            <h4 class="c_section_hd">
+                                <i class="ico_inn_info"></i>客栈老板
+                            </h4>
+                            <div class="c_section_bd">
+                                <div class="inn_info_boss clearfix">
+                                    <img src="images/img_inn_boss.png" alt="" />
+                                    <div class="inn_info_boss_tips">
+                                        <strong>老板-柯铁军</strong>
+                                        <span>来自：武汉</span>
+                                    </div>
+                                </div>
+                                <p class="inn_info_txt">
+                                    人生轨迹的迁移就是这样的具有不定性，面对选择也挣扎好久，凡事总有得失。于是放弃了白领、放弃了原有的一切生活和老公来到丽江。 丽江的一切冲击了我原有的生活：不论是民土风情，还是这里的文化。都说人生有两次冲动，一次为了奋不顾身的爱情，一次为了说走就走的旅行。
+                                </p>
+                            </div>
+                        </div>
+                        <div class="c_section htl_info_section c_section_side">
+                            <h4 class="c_section_hd">
+                                <i class="ico_htl_info"></i>客栈简介
+                            </h4>
+                            <div class="c_section_bd">
+                                <p class="htl_info_tips">
+                                    XXXXXX饭店虽地处寸土寸金的中央商务区，XXXXXX饭店的452套客房却全部采用低楼层设计，令每一位宾客都能充分享受绿色与阳光。<br/>
+                                    XXXXXX饭店客房宽敞舒适且设施完善，具有国际水准，包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，包括IDD专线、无线上网、设施齐备的商务中心，24小时客房服务，房间内备有卫星电视、咖啡茶水机、迷你酒吧、私人保险箱、熨斗及熨衣板、吹风机等。<br/>
+                                    特设的行政楼层，客人可享受高水平人性化的服务及特别待遇：快速办理入住及离店手续，免费欢乐时光，全天免费的咖啡和茶，免费新闻，免费影印。，客人可享受高水平人性化的服务及特别待遇：快速办理入住及离店手续，免费欢乐时光，全天免费的咖啡和茶，免费新闻，免费影印。，客人可享受高水平人性化的服务及特别待遇：快速办理入住及离店手续，免费欢乐时光，全天免费的咖啡和茶，免费新闻，免费影印免费新闻。饭店客房宽敞舒适且设施完善，具有国际水准，包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，包括IDD专线、无线上网、设施齐备的商务中心，24小时客房服务，房间内备有卫星电视、咖啡茶水机、迷你酒吧、私人保险箱、熨斗及熨衣板、吹风机等。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_section htl_info_section">
+                        <h4 class="c_section_hd">
+                            <i class="ico_htl_info"></i>客栈简介
+                        </h4>
+                        <div class="c_section_bd">
+                            <p class="htl_info_tips">XXXXXX饭店虽地处寸土寸金的中央商务区，XXXXXX饭店的452套客房却全部采用低楼层设计，令每一位宾客都能充分享受绿色与阳光。
+                                XXXXXX饭店客房宽敞舒适且设施完善，具有国际水准，包括商务客房、行政客房及豪华商务套房。饭店还设有多项服务设施，包括IDD专线、无线上网、设施齐备的商务中心，24小时客房服务，房间内备有卫星电视、咖啡茶水机、迷你酒吧、私人保险箱、熨斗及熨衣板、吹风机等。
+                                特设的行政楼层，客人可享受高水平人性化的服务及特别待遇：快速办理入住及离店手续，免费欢乐时光，全天免费的咖啡和茶，免费新闻，免费影印。
+                                特设的行政楼层，客人可享受高水平人性化的服务及特别待遇：快速办理入住及离店手续，免费欢乐时光，全天免费的咖啡和茶，免费新闻，免费影印。</p>
+                        </div>
+                    </div>
+                    <div class="c_section room_section">
+                        <h4 class="c_section_hd">
+                            <i class="ico_view_img"></i>图片欣赏
+                        </h4>
+                        <div class="c_section_bd">
+                            <div class="room_section_list_wrap">
+                                <ul class="room_section_list clearfix">
+                                    <li>
+                                        <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="">
+                                        <div class="room_info">酒店内景（12）</div>
+                                    </li>
+                                    <li>
+                                        <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="">
+                                        <div class="room_info">酒店内景（12）</div>
+                                    </li>
+                                    <li>
+                                        <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="">
+                                        <div class="room_info">酒店内景（12）</div>
+                                    </li>
+                                    <li>
+                                        <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="">
+                                        <div class="room_info">酒店内景（12）</div>
+                                    </li>
+                                    <li>
+                                        <img class="data_img" src="http://placehold.it/1x1" data-sml="images/zzz_room_list_s.png" data-lrg="images/zzz_room_list.png" alt="">
+                                        <div class="room_info">酒店内景（12）</div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="c_section service_section">
+                        <h4 class="c_section_hd">
+                            <i class="ico_facility_service"></i>设施与服务
+                        </h4>
+                        <div class="c_section_bd">
+                            <ul class="c_section_intro  c_section_intro_facility_service">
+                                <li>
+                                    <span class="intro_tit">网络设施</span>
+                                    <div class="htl_facilities">
+                                        <span class="facilities_item">客房有免费wifi</span>
+                                        <span class="facilities_item">公共免费wifi</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="intro_tit">停车场</span>
+                                    <div class="htl_facilities">
+                                        <span class="facilities_item">收费停车场</span>
+                                        <span class="facilities_item">收费停车场</span>
+                                        <span class="facilities_item">收费停车场</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <span class="intro_tit">酒店设施</span>
+                                    <div class="htl_facilities">
+                                        <dl>
+                                            <dt>通用设施</dt>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务"><span class="free">免费</span>24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>活动设施</dt>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                        </dl>
+                                        <dl>
+                                            <dt>服务项目</dt>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                            <dd title="24小时客房送餐服务">24小时客房送餐服务</dd>
+                                        </dl>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="c_section_intro_s_facility_service clearfix">
+                                <li><i class="ico_wifi"></i>WIFI无线上网</li>
+                                <li><i class="ico_net"></i>有线上网</li>
+                                <li><i class="ico_free_water"></i>免费瓶装水</li>
+                                <li><i class="ico_free_wash_bag"></i>免费洗漱用品</li>
+                                <li><i class="ico_hot_water"></i>24小时热水</li>
+                                <li><i class="ico_blower"></i>吹风机</li>
+                                <li><i class="ico_consign"></i>行李寄存</li>
+                                <li><i class="ico_pick_up"></i>接机服务</li>
+                                <li><i class="ico_restaurant"></i>餐厅</li>
+                                <li><i class="ico_gym"></i>健身房</li>
+                                <li><i class="ico_park"></i>免费停车</li>
+                                <li><i class="ico_free_map"></i>免费地图</li>
+                                <li><i class="ico_morning_call"></i>叫醒服务</li>
+                                <li><i class="ico_no_smoke"></i>无烟房</li>
+                                <li><i class="ico_swimming_pool"></i>游泳池</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="c_section policy_section">
+                        <h4 class="c_section_hd">
+                            <i class="ico_check_in_policy"></i>入住政策
+                        </h4>
+                        <div class="c_section_bd">
+                            <ul class="c_section_intro c_section_intro_s_policy_section">
+                                <li>
+                                    <span class="intro_tit">入住和离店</span>
+                                    <span class="intro_txt">入住时间：14:00以后&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<label class="leave_time">离店时间：12:00以前</label></span>
+                                </li>
+                                <li>
+                                    <span class="intro_tit">膳食安排</span>
+                                    <span class="intro_txt">自助早餐 RMB193</span>
+                                </li>
+                                <li>
+                                    <span class="intro_tit">宠物</span>
+                                    <span class="intro_txt">不可携带宠物</span>
+                                </li>
+                                <li>
+                                    <span class="intro_tit">接受信用卡</span>
+                                    <span class="intro_txt">
+                                        <span class="ico_card_master"></span>
+                                        <span class="ico_card_visa"></span>
+                                        <span class="ico_card_amex"></span>
+                                        <span class="ico_card_diners"></span>
+                                        <span class="ico_card_jcb"></span>
+                                        <span class="ico_card_unionpay"></span>
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--<div class="clear"></div>-->
+        </div>
+    </div>
+    <div class="base_foot_wrap">
+        <div class="base_foot">
+            <div class="base_foot_crumb">
+                <a href="###">酒店官网</a> > <a href="###">酒店大全</a> > <a href="###">上海酒店大全</a> > XXX大酒店
+            </div>
+            <div class="foot_seo_list_wrap">
+                <dl class="foot_seo_list clearfix">
+                    <dt>热门酒店</dt>
+                    <dd><a href="###">速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">镇江雅狮度假精品酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店</a></dd>
+                    <dd><a href="###">荆门帝豪国际酒店荆门帝豪国际酒店</a></dd>
+                </dl>
+            </div>
+            <div class="foot_seo_list_wrap">
+                <dl class="foot_seo_list clearfix">
+                    <dt>友情链接</dt>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                    <dd><a href="###">速8酒店（承德避暑山庄）</a></dd>
+                    <dd><a href="###">南宁零度酒店</a></dd>
+                    <dd><a href="###">如家快捷酒店（西安钟西安钟）</a></dd>
+                    <dd><a href="###">苏州汉风吴韵大酒店</a></dd>
+                </dl>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">Copyright© 1999-2015, ctrip.com. All rights reserved.</div>
+
+    <div class="c_popup popup_room_detail" style="position: fixed; top: 50%; left: 50%; -webkit-transform: translate(-50%,-50%); display: none;">
+        <div class="c_popup_hd">
+            豪华大床房<span class="c_close"></span>
+        </div>
+        <div class="c_popup_bd">
+            <img class="room_img" src="images/zzz_popup_img.png" alt=""/>
+            <ul class="room_detail_list">
+                <li><i class="ico_area"></i><span class="tit">面积</span>45㎡</li>
+                <li><i class="ico_check_in_num"></i><span class="tit">可住</span>2人</li>
+                <li><i class="ico_add_bed"></i><span class="tit">加床价</span> <span class="base_orange"><dfn>&yen;</dfn>100</span></li>
+                <li><i class="ico_step"></i><span class="tit">楼层</span>2-3层</li>
+                <li><i class="ico_bed_style"></i><span class="tit">床型</span>大床2.00米，双床1.20米</li>
+                <li><i class="ico_no_smoke"></i><span class="tit">无烟</span>该房可无烟处理</li>
+                <li><i class="ico_net"></i><span class="tit">宽带</span>全部房间支持免费有线宽带</li>
+            </ul>
+            <div class="mark_tips">
+                备注信息，备注的信息该酒店不可取酒店不可取消修改，该酒店不可取消。
+            </div>
+            <div class="price_calc">
+                <div class="price_calc_item">
+                    <div class="price_calc_tips">每晚均价</div>
+                    <div class="price_calc_result">
+                        <span class="price_format"><dfn>&yen;</dfn>1885</span> <span class="plus_symbol">+</span> <span class="price_format price_format_s"><dfn>&yen;</dfn>283</span>
+                    </div>
+                </div>
+                <a href="###" class="comm_btn">预定</a>
+            </div>
+        </div>
+    </div>
+
+    <div class="htl_pic_pop detail_pic_box">
+        <div class="htl_pic_pop_hd clearfix">
+            <a href="javascript" class="close">×</a>图片欣赏
+        </div>
+        <div class="pic_box">
+            <div class="pic_left">
+                <div class="pic_b">
+                    <img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg">
+                    <div class="prev"><span class="hover"><b class="ico_pop_l_arr"></b></span></div>
+                    <div class="next"><span class="hover"><b class="ico_pop_r_arr"></b></span></div>
+                    <p class="pic_copyright">the image is provided by VFML</p>
+                    <div class="pic_loading">图片加载中...</div>
+                </div>
+                <p class="pic_info"><strong>酒店客房</strong>(<strong class="base_orange">1</strong>/12)</p>
+            </div>
+            <div class="pic_type_select_wrap">
+                <div class="pic_type_select">
+                    <a href="javascript:;" class="current">外景(12)<i class="sel_arr"></i></a><a href="javascript:;">内景(14)<i class="sel_arr"></i></a><a href="javascript:;">客房(14)<i class="sel_arr"></i></a>
+                </div>
+            </div>
+            <div class="pic_right">
+                <a href="javascript:;" class="pic_s current"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+                <a href="javascript:;" class="pic_s"><img alt="" src="http://images4.c-ctrip.com/target/hotel/55000/54363/19881552-E350-45BA-9674-97FAF340848F_300_225.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="htl_pic_mobile_pop">
+        <div id="headerview" style="height: 44px;">
+            <div class="cm-header cm-header--no-right" id="ui-view-12" style="">
+          <span class="cm-header-icon fl js_back">
+              <i class="icon-back"></i>
+          </span>
+            <h1 class="cm-page-title js_title">全部</h1>
+        </div>
+        </div>
+        <div class="hotel-bigimgbox">
+            <div class="hotel-sliderbox">
+                <p id="js_title" class="hotel-slidertit">外观</p>
+                <div class="js_slider hotel-slider-wrap">
+                    <ul class="xslide-list-item">
+                        <li>
+                            <img src="http://images4.c-ctrip.com/target/hotel/22000/21648/542d8c19b5ab4b93ad936c54d2b9453e_550_412.jpg" alt=""/>
+                        </li>
+                        <li class="xslide-list-item">
+                            <img src="http://images4.c-ctrip.com/target/hotel/22000/21648/d20f25bcce44453e89bc1c6a25795dcf_550_412.jpg" alt=""/>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="fix_bottom hotel-blackbg">
+            <ul class="hotel-imglistbar">
+                <li id="js_pre" class="hotel-imglistbar-arr"><b>&lt;</b></li>
+                <li id="js_idx" class="hotel-imglistbar-num">3/21</li>
+                <li id="js_next" class="hotel-imglistbar-arr"><b>&gt;</b></li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
